@@ -359,6 +359,7 @@
 
   .main {
     width: 100vw;
+    min-height: 100vh;
     box-sizing: border-box;
     padding: 3vw;
     // position: relative;

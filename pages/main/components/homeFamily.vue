@@ -25,6 +25,7 @@
 <style lang="scss" scoped>
   .main {
     width: 100vw;
+    min-height: 100vh;
     box-sizing: border-box;
     padding: 3vw;
     background-color: #f5f5f5;

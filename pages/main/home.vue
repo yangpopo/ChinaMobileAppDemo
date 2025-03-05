@@ -1,6 +1,6 @@
 <template>
-  <scroll-view :scroll-x="false" :scroll-y="true" class="home" @scroll="scrollEvent" @click.stop="allClickEvent">
-    <view class="head" :style="{'visibility': isScroll ? 'hidden' : 'visible'}">
+  <scroll-view :scroll-x="false" :scroll-y="true" class="home" :scroll-top="scrollTop" @scroll="scrollEvent" @click.stop="allClickEvent">
+    <view class="head" :style="{'visibility': isScroll ? 'hidden' : 'visible'}" id="headId">
       <userSearchInfoNav styleType="light" />
       <scroll-view :scroll-x="true" :scroll-y="false" class="nav">
         <view class="nav-box">
@@ -10,14 +10,13 @@
           <view class="nav-item" @click="switchNav('homeMobilePhone')" :class="{'selected' : navType == 'homeMobilePhone'}">手机
             <view class="tag">国补</view>
           </view>
-          <view class="nav-item" @click="switchNav('serviceHall')" :class="{'selected' : navType == 'serviceHall'}">附近厅
+          <view class="nav-item" @click="switchNav('homeNearbyServiceHall')" :class="{'selected' : navType == 'homeNearbyServiceHall'}">附近厅
           </view>
           <view class="nav-item" @click="switchNav('governmentEnterprise')"
             :class="{'selected' : navType == 'governmentEnterprise'}">政企</view>
         </view>
       </scroll-view>
     </view>
-
     <view class="head dark"
       :style="{'visibility': !isScroll ? 'hidden' : 'visible', 'opacity': scrollHeadSchedule * 1}">
       <userSearchInfoNav styleType="dark" />
@@ -29,7 +28,7 @@
           <view class="nav-item" @click="switchNav('homeMobilePhone')" :class="{'selected' : navType == 'homeMobilePhone'}">手机
             <view class="tag">国补</view>
           </view>
-          <view class="nav-item" @click="switchNav('serviceHall')" :class="{'selected' : navType == 'serviceHall'}">附近厅
+          <view class="nav-item" @click="switchNav('homeNearbyServiceHall')" :class="{'selected' : navType == 'homeNearbyServiceHall'}">附近厅
           </view>
           <view class="nav-item" @click="switchNav('governmentEnterprise')"
             :class="{'selected' : navType == 'governmentEnterprise'}">政企</view>
@@ -40,6 +39,7 @@
    <homeReferrals v-if="navType == 'homeReferrals'" />
    <homeFamily v-else-if="navType == 'homeFamily'" />
    <homeMobilePhone v-else-if="navType == 'homeMobilePhone'" />
+   <homeNearbyServiceHall v-else-if="navType == 'homeNearbyServiceHall'" />
    
   </scroll-view>
 </template>
@@ -50,11 +50,14 @@
   import homeReferrals from '@/pages/main/components/homeReferrals.vue' // 家-->推荐
   import homeFamily from '@/pages/main/components/homeFamily.vue' // 家-->爱家
   import homeMobilePhone from '@/pages/main/components/homeMobilePhone.vue' // 家-->手机
-  import { ref } from 'vue'
+  import homeNearbyServiceHall from '@/pages/main/components/homeNearbyServiceHall.vue' // 家-->附近营业厅
+  import { ref, nextTick } from 'vue'
   import { useUserSearchInfoNavStore } from '@/stores/userSearchInfoNav' // 引入用户搜索信息状态
 
   const userSearchInfoNavState = useUserSearchInfoNavStore()
-
+  
+  const scrollTop = ref(0) // 滚动值
+  
   /*
   * 监听全部点击事件
   */
@@ -86,7 +89,11 @@
    * 切换导航类型
   */
   const switchNav = (val : string) : void => {
+    scrollTop.value = 10
     navType.value = val
+    nextTick(() => {
+      scrollTop.value = 0 // 初始化滚动条
+    })
   }
 
   /*
