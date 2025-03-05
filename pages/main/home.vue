@@ -7,7 +7,7 @@
           <view class="nav-item" @click="switchNav('homeReferrals')" :class="{'selected' : navType == 'homeReferrals'}">推荐
           </view>
           <view class="nav-item" @click="switchNav('homeFamily')" :class="{'selected' : navType == 'homeFamily'}">爱家</view>
-          <view class="nav-item" @click="switchNav('mobilePhone')" :class="{'selected' : navType == 'mobilePhone'}">手机
+          <view class="nav-item" @click="switchNav('homeMobilePhone')" :class="{'selected' : navType == 'homeMobilePhone'}">手机
             <view class="tag">国补</view>
           </view>
           <view class="nav-item" @click="switchNav('serviceHall')" :class="{'selected' : navType == 'serviceHall'}">附近厅
@@ -26,7 +26,7 @@
           <view class="nav-item" @click="switchNav('homeReferrals')" :class="{'selected' : navType == 'homeReferrals'}">推荐
           </view>
           <view class="nav-item" @click="switchNav('homeFamily')" :class="{'selected' : navType == 'homeFamily'}">爱家</view>
-          <view class="nav-item" @click="switchNav('mobilePhone')" :class="{'selected' : navType == 'mobilePhone'}">手机
+          <view class="nav-item" @click="switchNav('homeMobilePhone')" :class="{'selected' : navType == 'homeMobilePhone'}">手机
             <view class="tag">国补</view>
           </view>
           <view class="nav-item" @click="switchNav('serviceHall')" :class="{'selected' : navType == 'serviceHall'}">附近厅
@@ -39,6 +39,7 @@
     
    <homeReferrals v-if="navType == 'homeReferrals'" />
    <homeFamily v-else-if="navType == 'homeFamily'" />
+   <homeMobilePhone v-else-if="navType == 'homeMobilePhone'" />
    
   </scroll-view>
 </template>
@@ -48,6 +49,7 @@
   import homeColumn from '@/pages/main/components/homeColumn.vue' // 家的栏目
   import homeReferrals from '@/pages/main/components/homeReferrals.vue' // 家-->推荐
   import homeFamily from '@/pages/main/components/homeFamily.vue' // 家-->爱家
+  import homeMobilePhone from '@/pages/main/components/homeMobilePhone.vue' // 家-->手机
   import { ref } from 'vue'
   import { useUserSearchInfoNavStore } from '@/stores/userSearchInfoNav' // 引入用户搜索信息状态
 
