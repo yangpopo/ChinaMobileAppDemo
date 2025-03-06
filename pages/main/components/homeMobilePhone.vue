@@ -2,7 +2,7 @@
   <view class="main">
     <!-- 背景 -->
     <view class="main-bg"></view>
-    <swiper class="cover-ad" :autoplay="true" :indicator-dots="true" :interval="3000"
+    <swiper class="cover-ad" :autoplay="true" :indicator-dots="true" :interval="3000" :circular="true"
       indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)">
       <swiper-item>
         <image class="cover-item" src="/assets/image/home/mobile-phone-ad.png" mode="widthFix"></image>

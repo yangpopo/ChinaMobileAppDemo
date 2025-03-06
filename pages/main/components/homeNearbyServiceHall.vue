@@ -4,7 +4,7 @@
     <view class="main-bg"></view>
     <view class="service-hall">
       <view class="head">
-        <view class="titel">北培营业厅</view>
+        <view class="title">北培营业厅</view>
         <view class="more">更多></view>
       </view>
       <view class="service-hall-info">
@@ -71,21 +71,45 @@
       <view class="left-box">
         <view class="title">20GB爆款任你选</view>
         <view class="subhead">仅需1元畅享优惠</view>
-        <image src="/assets/image/home/hot-recommend-icon-01.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/hot-recommend-icon-01.png" mode="widthFix"></image>
       </view>
       <view class="right-box">
         <view class="hot-recommend-item">
           <view class="title">月月领3元话费券+1GB</view>
-          <image src="/assets/image/home/hot-recommend-icon-02.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/hot-recommend-icon-02.png" mode="widthFix"></image>
         </view>
         <view class="hot-recommend-item">
           <view class="title">7元10GB<text>浏览拼着买</text></view>
-          <image src="/assets/image/home/hot-recommend-icon-02.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/hot-recommend-icon-03.png" mode="widthFix"></image>
         </view>
       </view>
-      
     </view>
 
+    <!-- 热卖手机 -->
+    <view class="hot-phone">
+      热卖手机
+    </view>
+    <view class="hot-phone-list">
+      <view class="hot-phone-item">
+        <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+        <view class="title">iPhone</view>
+        <view class="subhead">移动正品保障</view>
+        <view class="price">¥5454起</view>
+      </view>
+      <view class="hot-phone-item">
+        <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+        <view class="title">iPhone</view>
+        <view class="subhead">荣耀专区</view>
+        <view class="price">¥5454起</view>
+      </view>
+      <view class="hot-phone-item">
+        <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+        <view class="title">iPhone</view>
+        <view class="subhead">OPPO专区</view>
+        <view class="price">¥5454起</view>
+      </view>
+    </view>
+  
   </view>
 </template>
 
@@ -133,7 +157,7 @@
         justify-content: space-between;
         align-items: center;
 
-        .titel {
+        .title {
           font-size: 4.5vw;
           font-weight: bold;
           color: #000000;
@@ -275,25 +299,124 @@
     }
     .hot-recommend-box {
       display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 3vw;
       .left-box {
-        width: 50%;
+        width: calc(50% - 1.5vw);
         box-sizing: border-box;
         padding: 5vw 3vw;
         background-color: #fff;
         border-radius: 2vw;
         box-shadow: 0vw 0.25vw 1vw #e9e9e9;
+        flex-shrink: 0;
         .title {
           width: 100%;
           font-size: 4.5vw;
           font-weight: bold;
           color: #000;
           text-align: center;
-          margin-bottom: 2vw;
+          margin-bottom: 1vw;
+        }
+        .subhead {
+          width: 100%;
+          font-size: 3.2vw;
+          color: #666666;
+          text-align: center;
+          margin-bottom: 3vw;
+        }
+        .icon {
+          width: 95%;
+          display: block;
+          margin: 5vw auto 0 auto;
+        }
+      }
+      .right-box {
+        width: calc(50% - 1.5vw);
+        .hot-recommend-item {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 2vw;
+          background-color: #fff;
+          border-radius: 2vw;
+          box-shadow: 0vw 0.25vw 1vw #e9e9e9;
+          &:nth-child(1) {
+            margin-bottom: 3vw;
+            background-image: linear-gradient(-180deg, #f7cfce 0%, #fff 30%);
+          }
+          &:nth-child(2) {
+            background-image: linear-gradient(-180deg, #fcefd0 0%, #fff 30%);
+          }
+          .title {
+            width: 100%;
+            font-size: 3.5vw;
+            font-weight: bold;
+            color: #000;
+            text-align: center;
+            margin-bottom: 2vw;
+          }
+          .icon {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .hot-phone {
+      width: 100%;
+      font-size: 4.5vw;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 2vw;
+    }
+    .hot-phone-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 3vw;
+      .hot-phone-item {
+        width: calc(33.33% - 2vw);
+        background-color: #fff;
+        border-radius: 2vw;
+        box-shadow: 0vw 0.25vw 1vw #e9e9e9;
+        box-sizing: border-box;
+        padding: 2vw 3vw;
+        .cover {
+          width: 100%;
+          margin-bottom: 1vw;
+        }
+        .title {
+          width: 100%;
+          font-size: 4vw;
+          font-weight: bold;
+          color: #000;
+          text-align: center;
+          white-space: nowrap; /* 不换行 */
+          overflow: hidden; /* 隐藏超出的内容 */
+          text-overflow: ellipsis; /* 用省略号表示被隐藏的部分 */
+          margin-bottom: 1vw;
         }
         .subhead {
           width: 100%;
           font-size: 3vw;
-          color: #666666;
+          color: #ea3323;
+          text-align: center;
+          white-space: nowrap; /* 不换行 */
+          overflow: hidden; /* 隐藏超出的内容 */
+          text-overflow: ellipsis; /* 用省略号表示被隐藏的部分 */
+          margin-bottom: 1vw;
+        }
+        .price {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 1.5vw 1vw;
+          font-size: 3.5vw;
+          color: #fff;
+          border-radius: 5vw;
+          background-image: linear-gradient(-90deg, #e64c3a, #f1ad7b);
           text-align: center;
         }
       }

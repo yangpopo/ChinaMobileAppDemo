@@ -7,7 +7,9 @@
         </view>
       </swiper-item>
       <swiper-item class="swiper-item">
-        <view class="swiper-item uni-bg-red">B</view>
+        <view class="swiper-item uni-bg-red">
+          <explore />
+        </view>
       </swiper-item>
       <swiper-item class="swiper-item">
         <view class="swiper-item uni-bg-red">C</view>
@@ -92,6 +94,10 @@
 <script lang="ts" setup>
   import { ref } from 'vue'
   import home from './home.vue';
+  import explore from './explore.vue';
+  
+  
+  
   const title = ref('Hello');
   const current = ref(0);
 

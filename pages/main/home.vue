@@ -2,7 +2,7 @@
   <scroll-view :scroll-x="false" :scroll-y="true" class="home" :scroll-top="scrollTop" @scroll="scrollEvent" @click.stop="allClickEvent">
     <view class="head" :style="{'visibility': isScroll ? 'hidden' : 'visible'}" id="headId">
       <userSearchInfoNav styleType="light" />
-      <scroll-view :scroll-x="true" :scroll-y="false" class="nav">
+      <scroll-view :scroll-x="true" :scroll-y="false" class="nav" :show-scrollbar="false">
         <view class="nav-box">
           <view class="nav-item" @click="switchNav('homeReferrals')" :class="{'selected' : navType == 'homeReferrals'}">推荐
           </view>
@@ -12,8 +12,8 @@
           </view>
           <view class="nav-item" @click="switchNav('homeNearbyServiceHall')" :class="{'selected' : navType == 'homeNearbyServiceHall'}">附近厅
           </view>
-          <view class="nav-item" @click="switchNav('governmentEnterprise')"
-            :class="{'selected' : navType == 'governmentEnterprise'}">政企</view>
+          <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
+            :class="{'selected' : navType == 'homeGovernmentEnterprise'}">政企</view>
         </view>
       </scroll-view>
     </view>
@@ -30,8 +30,8 @@
           </view>
           <view class="nav-item" @click="switchNav('homeNearbyServiceHall')" :class="{'selected' : navType == 'homeNearbyServiceHall'}">附近厅
           </view>
-          <view class="nav-item" @click="switchNav('governmentEnterprise')"
-            :class="{'selected' : navType == 'governmentEnterprise'}">政企</view>
+          <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
+            :class="{'selected' : navType == 'homeGovernmentEnterprise'}">政企</view>
         </view>
       </scroll-view>
     </view>
@@ -40,17 +40,18 @@
    <homeFamily v-else-if="navType == 'homeFamily'" />
    <homeMobilePhone v-else-if="navType == 'homeMobilePhone'" />
    <homeNearbyServiceHall v-else-if="navType == 'homeNearbyServiceHall'" />
+   <homeGovernmentEnterprise v-else-if="navType == 'homeGovernmentEnterprise'" />
    
   </scroll-view>
 </template>
 
 <script lang="ts" setup>
   import userSearchInfoNav from '@/pages/main/components/userSearchInfoNav.vue' // 用户搜索信息
-  import homeColumn from '@/pages/main/components/homeColumn.vue' // 家的栏目
   import homeReferrals from '@/pages/main/components/homeReferrals.vue' // 家-->推荐
   import homeFamily from '@/pages/main/components/homeFamily.vue' // 家-->爱家
   import homeMobilePhone from '@/pages/main/components/homeMobilePhone.vue' // 家-->手机
   import homeNearbyServiceHall from '@/pages/main/components/homeNearbyServiceHall.vue' // 家-->附近营业厅
+  import homeGovernmentEnterprise from '@/pages/main/components/homeGovernmentEnterprise.vue' // 家-->政企
   import { ref, nextTick } from 'vue'
   import { useUserSearchInfoNavStore } from '@/stores/userSearchInfoNav' // 引入用户搜索信息状态
 
@@ -121,7 +122,7 @@
       padding-top: 5vw;
       background-color: transparent;
       position: sticky;
-      z-index: 2;
+      z-index: 5;
       top: 0;
 
       &.dark {
@@ -150,8 +151,12 @@
             font-size: 3.5vw;
             color: #c4ecf8;
             box-sizing: border-box;
-            padding: 0 4vw;
+            padding: 0 2vw;
+            margin: 0 2vw;
             position: relative;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
 
             &.selected {
               font-size: 4vw;
