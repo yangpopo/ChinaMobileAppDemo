@@ -1,5 +1,5 @@
 <template>
-  <view class="explore">
+  <view class="main">
     <view class="welfare-class">
       <view class="welfare-item">
         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="115988">
@@ -101,7 +101,7 @@
 
     <!-- 周边美食 -->
     <template v-if="menuClass == 'fineFood'">
-      <view class="food-item">
+      <view class="food-item" v-for="item in 15" :key="item">
         <image class="logo" src="/assets/image/home/brand-ai.png" mode="widthFix"></image>
         <view class="food-info">
           <view class="title">
@@ -138,6 +138,25 @@
       </view>
     </template>
 
+    <!-- 大片观影 -->
+    <template v-else-if="menuClass == 'film'">
+      <view class="film-schedule">
+        <view class="schedule-type">
+          <view class="schedule-item" :class="{'selected': scheduleType == 'hotFilm'}" @click="switchScheduleType('hotFilm')">正在热映</view>
+          <view class="schedule-item" :class="{'selected': scheduleType == 'awaitFilm'}" @click="switchScheduleType('awaitFilm')">即将上映</view>
+        </view>
+        <view class="film-item" v-for="item in 15" :key="item">
+          <image class="film-cover" src="/assets/image/home/film-cover.png" mode="widthFix"></image>
+          <view class="film-info">
+            <view class="title">哪吒之魔童闹海</view>
+            <view class="score">评分:<text class="val">8.6</text></view>
+            <view class="director">导演:饺子</view>
+            <view class="protagonist">主演:谁谁谁&nbsp;谁谁谁&nbsp;谁谁谁&nbsp;谁谁谁</view>
+          </view>
+          <view class="buy-but">购票</view>
+        </view>
+      </view>
+    </template>
 
 
   </view>
@@ -148,16 +167,21 @@
   import { ref } from 'vue'
 
 
-  const menuClass = ref('fineFood')
+  const menuClass = ref('fineFood') // 菜单类型
   const switchMenuClass = (val : string) => {
     menuClass.value = val
+  }
+  
+  const scheduleType = ref('hotFilm') // 影片类型
+  const switchScheduleType = (val : string) => {
+    scheduleType.value = val
   }
 </script>
 
 <style lang="scss" scoped>
-  .explore {
+  .main {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     position: relative;
     box-sizing: border-box;
     padding: 3vw;
@@ -236,7 +260,8 @@
     .menu-class {
       width: 100%;
       position: sticky;
-      top: 0vw;
+      top: 29vw;
+      z-index: 3;
       display: flex;
       box-sizing: border-box;
       padding: 2vw 0;
@@ -276,6 +301,7 @@
       padding: 3vw;
       display: flex;
       justify-content: flex-start;
+      margin-bottom: 3vw;
 
       .logo {
         width: 15vw;
@@ -362,6 +388,118 @@
           }
         }
         
+      }
+    }
+    
+    .film-schedule {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 3vw;
+      border-radius: 2vw;
+      background-color: #fff;
+      .schedule-type {
+        width: calc(100% + 6vw);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2vw;
+        margin-left: -3vw;
+        box-sizing: border-box;
+        padding-bottom: 3vw;
+        border-bottom: 1px solid #fbfbfb;
+        .schedule-item {
+          width: 50%;
+          text-align: center;
+          font-size: 4vw;
+          color: #333333;
+          position: relative;
+          &.selected {
+            color: #e65f53;
+            &:before {
+              content: '';
+              width: 6vw;
+              height: 1vw;
+              background-color: #e65f53;
+              position: absolute;
+              bottom: -3vw;
+              left: 50%;
+              transform: translateX(-50%);
+              border-radius: 2vw;
+            }
+          }
+        }
+      }
+      .film-item {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        padding: 3vw 0;
+        position: relative;
+        &:before {
+          content: '';
+          width: calc(100% - 20vw - 4vw);
+          height: 1px;
+          position: absolute;
+          background-color: #f1f2f1;
+          right: 0;
+          bottom: 0;
+        }
+        .film-cover {
+          width: 20vw;
+          margin-right: 4vw;
+        }
+        .film-info {
+          width: calc(100% - 20vw - 4vw - 15%);
+          .title {
+            width: 100%;
+            font-size: 4.2vw;
+            font-weight: bold;
+            margin-bottom: 2vw;
+            color: #333333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .score {
+            width: 100%;
+            font-size: 3.5vw;
+            color: #333333;
+            margin-bottom: 2vw;
+            .val {
+              color: #eb5b40;
+            }
+          }
+          .director {
+            width: 100%;
+            font-size: 3.5vw;
+            color: #666666;
+            margin-bottom: 2vw;
+          }
+          .protagonist {
+            width: 100%;
+            font-size: 3.5vw;
+            color: #666666;
+            margin-bottom: 2vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .buy-but {
+          position: absolute;
+          background-image: linear-gradient(0, #eb5a41, #ee7f3c);
+          box-sizing: border-box;
+          padding: 1.5vw 3vw;
+          color: #fff;
+          border-radius: 5vw;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0vw;
+          font-size: 3.5vw;
+          font-weight: bold;
+        }
       }
     }
   }

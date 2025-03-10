@@ -42,6 +42,7 @@
    <homeNearbyServiceHall v-else-if="navType == 'homeNearbyServiceHall'" />
    <homeGovernmentEnterprise v-else-if="navType == 'homeGovernmentEnterprise'" />
    
+   
   </scroll-view>
 </template>
 

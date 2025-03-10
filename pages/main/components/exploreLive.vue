@@ -1,5 +1,5 @@
 <template>
-  <view class="explore">
+  <view class="main">
     <swiper class="cover-ad" :autoplay="true" :interval="4000" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
       <swiper-item>
         <image class="cover-ad-image" src="/assets/image/home/government-enterprise-ad.png" mode="widthFix"></image>
@@ -56,7 +56,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .explore {
+  .main {
     width: 100%;
     position: relative;
     box-sizing: border-box;

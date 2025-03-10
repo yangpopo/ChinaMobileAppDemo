@@ -1,48 +1,58 @@
 <template>
-  <scroll-view :scroll-x="false" :scroll-y="true" class="explore" @click.stop="allClickEvent">
-    <view class="head">
-      <userSearchInfoNav styleType="light" />
-      <scroll-view :scroll-x="true" :scroll-y="false" class="nav" :show-scrollbar="false">
-        <view class="nav-box">
-          <view class="nav-item" @click="switchNav('exploreLive')" :class="{'selected' : navType == 'exploreLive'}">
-            生活
+  <scroll-view :scroll-x="false" :scroll-y="true" :scroll-top="scrollTop" class="explore" @click.stop="allClickEvent">
+    <view class="scroll-box">
+      <view class="head">
+        <userSearchInfoNav styleType="light" />
+        <scroll-view :scroll-x="true" :scroll-y="false" class="nav" :show-scrollbar="false">
+          <view class="nav-box">
+            <view class="nav-item" @click="switchNav('exploreLive')" :class="{'selected' : navType == 'exploreLive'}">
+              生活
+            </view>
+            <view class="nav-item" @click="switchNav('exploreLocal')" :class="{'selected' : navType == 'exploreLocal'}">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="114397">
+                <path
+                  d="M620.8 339.2c0-51.2-38.4-89.6-89.6-89.6s-89.6 38.4-89.6 89.6 38.4 89.6 89.6 89.6 89.6-38.4 89.6-89.6zM928 819.2c-12.8-12.8-38.4-19.2-70.4-25.6-19.2-6.4-57.6-6.4-83.2-6.4h-6.4c-12.8 0-19.2 12.8-19.2 25.6s12.8 25.6 25.6 25.6h25.6c51.2 6.4 76.8 12.8 83.2 25.6 6.4 6.4 12.8 19.2 12.8 25.6 0 12.8-25.6 32-89.6 51.2-70.4 19.2-166.4 25.6-275.2 25.6-115.2 0-204.8-6.4-275.2-25.6-76.8-19.2-96-44.8-96-51.2 0-12.8 6.4-19.2 12.8-25.6 12.8-6.4 32-12.8 70.4-19.2h32c12.8 0 25.6-12.8 25.6-25.6s-6.4-19.2-19.2-25.6h-6.4c-64 0-102.4 12.8-134.4 25.6-25.6 19.2-44.8 44.8-44.8 76.8 0 25.6 12.8 51.2 44.8 70.4 19.2 12.8 51.2 25.6 89.6 32 70.4 19.2 172.8 25.6 288 25.6 121.6 0 204.8-6.4 275.2-25.6 44.8-6.4 83.2-25.6 102.4-38.4 25.6-19.2 44.8-38.4 51.2-64 12.8-38.4 6.4-51.2-19.2-76.8z"
+                  fill="#666666" p-id="114398"></path>
+                <path
+                  d="M486.4 851.2c12.8 12.8 25.6 19.2 44.8 19.2 12.8 0 32-6.4 44.8-19.2 57.6-76.8 102.4-147.2 166.4-249.6 70.4-115.2 115.2-211.2 115.2-275.2 0-83.2-32-166.4-89.6-224-64-64-140.8-96-224-96h-12.8c-83.2 0-160 32-224 96s-96 147.2-89.6 224c-6.4 64 32 166.4 102.4 275.2 64 108.8 115.2 172.8 166.4 249.6z m-128-704c51.2-51.2 115.2-76.8 172.8-76.8 64 0 128 25.6 172.8 76.8 51.2 51.2 76.8 102.4 76.8 172.8 0 32-19.2 89.6-64 172.8-44.8 76.8-96 160-172.8 268.8 0 6.4-6.4 6.4-12.8 6.4s-12.8 0-12.8-6.4c-147.2-204.8-236.8-371.2-236.8-441.6 0-70.4 25.6-121.6 76.8-172.8z"
+                  fill="#666666" p-id="114399"></path>
+              </svg>
+              同城
+            </view>
+            <view class="nav-item" @click="switchNav('exploreVideo')"
+              :class="{'selected' : navType == 'exploreVideo'}">视频
+              <!-- <view class="tag">国补</view> -->
+            </view>
+            <view class="nav-item" @click="switchNav('exploreGame')"
+              :class="{'selected' : navType == 'exploreGame'}">游戏
+            </view>
+            <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
+              :class="{'selected' : navType == 'homeGovernmentEnterprise'}">阅读</view>
+            <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
+              :class="{'selected' : navType == 'homeGovernmentEnterprise'}">无忧行</view>
           </view>
-          <view class="nav-item" @click="switchNav('exploreLocal')" :class="{'selected' : navType == 'exploreLocal'}"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="114397"><path d="M620.8 339.2c0-51.2-38.4-89.6-89.6-89.6s-89.6 38.4-89.6 89.6 38.4 89.6 89.6 89.6 89.6-38.4 89.6-89.6zM928 819.2c-12.8-12.8-38.4-19.2-70.4-25.6-19.2-6.4-57.6-6.4-83.2-6.4h-6.4c-12.8 0-19.2 12.8-19.2 25.6s12.8 25.6 25.6 25.6h25.6c51.2 6.4 76.8 12.8 83.2 25.6 6.4 6.4 12.8 19.2 12.8 25.6 0 12.8-25.6 32-89.6 51.2-70.4 19.2-166.4 25.6-275.2 25.6-115.2 0-204.8-6.4-275.2-25.6-76.8-19.2-96-44.8-96-51.2 0-12.8 6.4-19.2 12.8-25.6 12.8-6.4 32-12.8 70.4-19.2h32c12.8 0 25.6-12.8 25.6-25.6s-6.4-19.2-19.2-25.6h-6.4c-64 0-102.4 12.8-134.4 25.6-25.6 19.2-44.8 44.8-44.8 76.8 0 25.6 12.8 51.2 44.8 70.4 19.2 12.8 51.2 25.6 89.6 32 70.4 19.2 172.8 25.6 288 25.6 121.6 0 204.8-6.4 275.2-25.6 44.8-6.4 83.2-25.6 102.4-38.4 25.6-19.2 44.8-38.4 51.2-64 12.8-38.4 6.4-51.2-19.2-76.8z" fill="#666666" p-id="114398"></path><path d="M486.4 851.2c12.8 12.8 25.6 19.2 44.8 19.2 12.8 0 32-6.4 44.8-19.2 57.6-76.8 102.4-147.2 166.4-249.6 70.4-115.2 115.2-211.2 115.2-275.2 0-83.2-32-166.4-89.6-224-64-64-140.8-96-224-96h-12.8c-83.2 0-160 32-224 96s-96 147.2-89.6 224c-6.4 64 32 166.4 102.4 275.2 64 108.8 115.2 172.8 166.4 249.6z m-128-704c51.2-51.2 115.2-76.8 172.8-76.8 64 0 128 25.6 172.8 76.8 51.2 51.2 76.8 102.4 76.8 172.8 0 32-19.2 89.6-64 172.8-44.8 76.8-96 160-172.8 268.8 0 6.4-6.4 6.4-12.8 6.4s-12.8 0-12.8-6.4c-147.2-204.8-236.8-371.2-236.8-441.6 0-70.4 25.6-121.6 76.8-172.8z" fill="#666666" p-id="114399"></path></svg>
-          同城
-          </view>
-          <view class="nav-item" @click="switchNav('homeMobilePhone')"
-            :class="{'selected' : navType == 'homeMobilePhone'}">视频
-            <!-- <view class="tag">国补</view> -->
-          </view>
-          <view class="nav-item" @click="switchNav('homeNearbyServiceHall')"
-            :class="{'selected' : navType == 'homeNearbyServiceHall'}">游戏
-          </view>
-          <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
-            :class="{'selected' : navType == 'homeGovernmentEnterprise'}">阅读</view>
-          <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
-            :class="{'selected' : navType == 'homeGovernmentEnterprise'}">无忧行</view>
-        </view>
-      </scroll-view>
+        </scroll-view>
+      </view>
+      
+      
+      
+      <exploreLive v-if="navType == 'exploreLive'" />
+      <exploreLocal v-else-if="navType == 'exploreLocal'" />
+      <exploreVideo v-else-if="navType == 'exploreVideo'" />
+      <exploreGame v-else-if="navType == 'exploreGame'" />
+      
     </view>
-    
-    <exploreLive v-if="navType == 'exploreLive'" />
-    <exploreLocal v-else-if="navType == 'exploreLocal'" />
-
-    
-    
-    
-    
-
-
   </scroll-view>
 </template>
 
 <script lang="ts" setup>
   import userSearchInfoNav from '@/pages/main/components/userSearchInfoNav.vue' // 用户搜索信息
-  
+
   import exploreLive from '@/pages/main/components/exploreLive.vue' // 探索-->生活
-  import exploreLocal from '@/pages/main/components/exploreLocal.vue' // 探索-->生活
-  
+  import exploreLocal from '@/pages/main/components/exploreLocal.vue' // 探索-->同城
+  import exploreVideo from '@/pages/main/components/exploreVideo.vue' // 探索-->视频
+  import exploreGame from '@/pages/main/components/exploreGame.vue' // 探索-->游戏
+
 
   import { ref, nextTick } from 'vue'
   import { useUserSearchInfoNavStore } from '@/stores/userSearchInfoNav' // 引入用户搜索信息状态
@@ -87,6 +97,10 @@
     position: relative;
     box-sizing: border-box;
     padding-bottom: 20vw;
+    .scroll-box {
+      width: 100%;
+      height: auto;
+    }
 
     .head {
       width: 100vw;
@@ -125,6 +139,7 @@
             &.selected {
               font-weight: bold;
               color: #000000;
+
               &:before {
                 content: '';
                 width: 5vw;
@@ -137,6 +152,7 @@
                 transform: translateX(-50%);
               }
             }
+
             .icon {
               width: 5vw;
               height: 5vw;
@@ -161,7 +177,7 @@
         }
       }
     }
-    
+
 
 
   }
