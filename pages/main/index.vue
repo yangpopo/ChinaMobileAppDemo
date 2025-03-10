@@ -12,7 +12,9 @@
         </view>
       </swiper-item>
       <swiper-item class="swiper-item">
-        <view class="swiper-item uni-bg-red">C</view>
+        <view class="swiper-item uni-bg-red">
+          <equities />
+        </view>
       </swiper-item>
       <swiper-item class="swiper-item">
         <view class="swiper-item uni-bg-red">D</view>
@@ -93,8 +95,9 @@
 
 <script lang="ts" setup>
   import { ref } from 'vue'
-  import home from './home.vue';
-  import explore from './explore.vue';
+  import home from './home.vue'; // 首页
+  import explore from './explore.vue'; // 探索
+  import equities from './equities.vue'; // 权益
   
   
   

@@ -26,10 +26,10 @@
             <view class="nav-item" @click="switchNav('exploreGame')"
               :class="{'selected' : navType == 'exploreGame'}">游戏
             </view>
-            <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
-              :class="{'selected' : navType == 'homeGovernmentEnterprise'}">阅读</view>
-            <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
-              :class="{'selected' : navType == 'homeGovernmentEnterprise'}">无忧行</view>
+            <view class="nav-item" @click="switchNav('exploreRead')"
+              :class="{'selected' : navType == 'exploreRead'}">阅读</view>
+            <!-- <view class="nav-item" @click="switchNav('homeGovernmentEnterprise')"
+              :class="{'selected' : navType == 'homeGovernmentEnterprise'}">无忧行</view> -->
           </view>
         </scroll-view>
       </view>
@@ -40,6 +40,7 @@
       <exploreLocal v-else-if="navType == 'exploreLocal'" />
       <exploreVideo v-else-if="navType == 'exploreVideo'" />
       <exploreGame v-else-if="navType == 'exploreGame'" />
+      <exploreRead v-else-if="navType == 'exploreRead'" />
       
     </view>
   </scroll-view>
@@ -52,6 +53,7 @@
   import exploreLocal from '@/pages/main/components/exploreLocal.vue' // 探索-->同城
   import exploreVideo from '@/pages/main/components/exploreVideo.vue' // 探索-->视频
   import exploreGame from '@/pages/main/components/exploreGame.vue' // 探索-->游戏
+  import exploreRead from '@/pages/main/components/exploreRead.vue' // 探索-->阅读
 
 
   import { ref, nextTick } from 'vue'
