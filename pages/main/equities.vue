@@ -224,7 +224,31 @@
           <image class="cover" src="/assets/image/equities/column-icon-05.png" mode="widthFix"></image>
           <view class="title">生活费</view>
         </view>
-        
+      </view>
+      
+      <scroll-view class="hot-class-nav" :scroll-x="true" :show-scrollbar="false">
+        <view class="class-nav-box">
+          <view class="class-nav-item" :class="{'selected': classNavSelected == 'faddish'}" @click="switchClassNav">爆款好物</view>
+          <view class="class-nav-item" :class="{'selected': classNavSelected == 'fineFood'}" @click="switchClassNav">美食特惠</view>
+          <view class="class-nav-item" :class="{'selected': classNavSelected == 'audition'}" @click="switchClassNav">试听专区</view>
+          <view class="class-nav-item" :class="{'selected': classNavSelected == 'lifeStyle'}" @click="switchClassNav">生活无忧</view>
+        </view>
+      </scroll-view>
+      
+      <view class="member-privilege">
+        <view class="privilege-item" v-for="item in 10" :key="item">
+          <view class="cover">
+            <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode="widthFix"></image>
+            <view class="tag">爆款</view>
+          </view>
+          <view class="title">车主权益包</view>
+          <view class="original-price">原价¥32</view>
+          <view class="vip-price">
+            <view class="price">¥32.9</view>
+            <view class="title">会员价</view>
+          </view>
+          
+        </view>
       </view>
       
 
@@ -241,10 +265,18 @@
    * 切换显示更多
 */
   const switchShowMore = () => {
-    nextTick(() => {
-      isShowMore.value = !isShowMore.value
-    })
+    isShowMore.value = !isShowMore.value
   }
+  
+  const classNavSelected = ref('faddish') // 类型导航选中
+  
+  /**
+   * 切换类型导航
+*/
+  const switchClassNav = (val: string) => {
+    classNavSelected.value = val
+  }
+  
 </script>
 
 <style lang="scss" scoped>
@@ -595,6 +627,7 @@
       border-radius: 3vw;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 3vw;
       .signi-column-item {
         width: 20%;
         .cover {
@@ -610,6 +643,137 @@
         }
       }
     }
-
+    .hot-class-nav {
+      width: 100%;
+      margin-bottom: 3vw;
+      .class-nav-box{
+        width: 100%;
+        display: flex;
+        .class-nav-item {
+          box-sizing: border-box;
+          padding: 1vw 3vw;
+          font-size: 3.2vw;
+          color: #666666;
+          background-color: #f1f1f1;
+          border: 1px solid #e7e7e7;
+          border-radius: 5vw;
+          margin-right: 2vw;
+          &.selected {
+            color: #ec6e3e;
+            background-color: #fdf6eb;
+            border: 1px solid #ec6e3e;
+          }
+        }
+      }
+    }
+    .member-privilege {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .privilege-item {
+        width: 30.9%;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        border-radius: 2vw;
+        margin: 0 1.2% 1.5% 1.2%;
+        .cover {
+          width: 100%;
+          height: 21vw;
+          border-radius: 2vw 2vw 0 0;
+          background-color: #fdf6f6;
+          position: relative;
+          overflow: hidden;
+          margin-bottom: 1vw;
+          .cover-img {
+            width: 11vw;
+            height: 11vw;
+            border-radius: 3vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          .tag{
+            width: 20vw;
+            height: 10vw;
+            background-color: #da5655;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5vw;
+            font-weight: bold;
+            color: #fff;
+            position: absolute;
+            transform: rotate(45deg);
+            top: -2vw;
+            right: -7vw;
+            box-sizing: border-box;
+            padding-top: 3vw;
+          }
+        }
+        >.title {
+          width: 100%;
+          text-align: center;
+          overflow: hidden; /* 超出部分隐藏 */
+          white-space: nowrap; /* 保持文本在一行内显示 */
+          text-overflow: ellipsis; /* 超出部分显示省略号 */
+          box-sizing: border-box;
+          padding: 1vw 2vw;
+          font-size: 3.5vw;
+          color: #333333;
+        }
+        .original-price {
+          width: 100%;
+          font-size: 3.2vw;
+          text-align: center;
+          color: #c9c9c9;
+          box-sizing: border-box;
+          padding: 1vw 2vw;
+          text-decoration: line-through;
+        }
+        .vip-price {
+          width: 100%;
+          height: 8vw;
+          box-sizing: border-box;
+          padding: 0 2vw;
+          border-radius: 5vw;
+          background-color: #ed8641;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          overflow: hidden;
+          &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            display: block;
+            width: 20vw;
+            height: 15vw;
+            background-color: #f7d494;
+            top: -2vw;
+            right: -6vw;
+            transform: rotate(20deg);
+          }
+          .price {
+            font-size: 4vw;
+            font-weight: bold;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+          }
+          .title {
+            font-size: 3.5vw;
+            font-weight: bold;
+            color: #6b3b20;
+            position: relative;
+            z-index: 2;
+          }
+        }
+      }
+    }
   }
 </style>

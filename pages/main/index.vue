@@ -17,7 +17,9 @@
         </view>
       </swiper-item>
       <swiper-item class="swiper-item">
-        <view class="swiper-item uni-bg-red">D</view>
+        <view class="swiper-item uni-bg-red">
+          <my />
+        </view>
       </swiper-item>
     </swiper>
     <view class="nav">
@@ -98,6 +100,7 @@
   import home from './home.vue'; // 首页
   import explore from './explore.vue'; // 探索
   import equities from './equities.vue'; // 权益
+  import my from './my.vue'; // 我的
   
   
   
