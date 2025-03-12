@@ -71,6 +71,10 @@
       // 关闭-->用户搜索信息状态
       userSearchInfoNavState.isShowMenu = false
     }
+    if (userSearchInfoNavState.isShowUserMenu) {
+      // 关闭-->用户搜索信息状态
+      userSearchInfoNavState.isShowUserMenu = false
+    }
 
   }
 

@@ -2,8 +2,8 @@
   <scroll-view class="equities" scroll-y="true">
     <uni-nav-bar class="nav-bar" shadow :border="false">
       <view class="title">中国移动权益超市</view>
-      <view class="right" slot="right">
-        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="140011">
+      <view class="right" slot="right" >
+        <svg class="icon" @click="skipSearchPage" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="140011">
           <path
             d="M473.088 106.496c200.704 0 362.496 161.792 362.496 362.496 0 200.704-161.792 362.496-362.496 362.496-200.704 0-362.496-161.792-362.496-362.496-2.048-198.656 161.792-362.496 362.496-362.496m0-59.392C239.616 47.104 51.2 235.52 51.2 468.992S239.616 890.88 473.088 890.88c233.472 0 421.888-188.416 421.888-421.888S706.56 47.104 473.088 47.104z m0 0M993.28 940.032l-38.912 38.912L741.376 768l38.912-38.912L993.28 940.032z m0 0"
             p-id="140012"></path>
@@ -275,6 +275,16 @@
 */
   const switchClassNav = (val: string) => {
     classNavSelected.value = val
+  }
+  
+  /**
+   * 跳转搜索
+  */
+  const skipSearchPage = () => {
+    console.log('564564564')
+    uni.navigateTo({
+      url: '/pages/search/equitiesSearch'
+    })
   }
   
 </script>

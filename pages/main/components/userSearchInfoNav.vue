@@ -1,13 +1,30 @@
 <template>
   <view class="user-seach-info" @click.stop :style="{'--font-color': styleType.fontColor, '--background-color': styleType.backgroundColor}">
-    <view class="user" v-if="false">登录</view>
-    <view class="user" v-else>
+    <view class="user" v-if="false" @click="openUserMenu">登录</view>
+    <view class="user" v-else @click="openUserMenu">
       <view class="phone">
         158****1234
       </view>
       <view class="switch">切换<svg class="icon"viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1776"><path d="M956.994933 307.22722c4.950755-11.95017 2.214435-25.705452-6.931876-34.851763L799.528576 121.840976l-45.227064 45.227064 95.941096 95.941096-722.30068 0 0 63.960731 799.507086 0C940.384627 326.969866 952.046225 319.179436 956.994933 307.22722zM959.430402 646.774543L159.923316 646.774543c-12.935614 0-24.596188 7.791453-29.54592 19.741623-4.950755 11.95017-2.214435 25.705452 6.931876 34.851763l150.534482 150.534482 45.227064-45.226041-95.941096-95.941096 722.30068 0L959.430402 646.774543z" p-id="1777"></path></svg></view>
+      
+      <Transition name="accountmenu">
+        <view class="account-box" v-if="userSearchInfoNavState.isShowUserMenu" @click.stop>
+          <view class="head">手机号切换</view>
+          <view class="current-account">当前号码:158****1234</view>
+          <view class="waiting-account" v-for="item in 3" :key="item">
+            <text class="title">158****0000</text>
+            <view class="switch-but">切换</view></view>
+          <view class="login-account">
+            <text class="title">其他账号登陆</text>
+            <view class="login-but"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="57007"><path d="M881 562H81c-27.6 0-50-22.4-50-50s22.4-50 50-50h800c27.6 0 50 22.4 50 50s-22.4 50-50 50zM907.6 540.7L695.5 328.6c-19.5-19.5-19.5-51.2 0-70.7s51.2-19.5 70.7 0L978.4 470c19.5 19.5 19.5 51.2 0 70.7-19.6 19.6-51.2 19.6-70.8 0zM695.5 695.4l212.1-212.1c19.5-19.5 51.2-19.5 70.7 0s19.5 51.2 0 70.7L766.2 766.1c-19.5 19.5-51.2 19.5-70.7 0s-19.5-51.2 0-70.7z" p-id="57008"></path></svg>
+            </view>
+          </view>
+          <svg @click="userSearchInfoNavState.switchUserMenu" class="close-but" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="58000"><path d="M913.18949273 968.10553227c-11.29527793 0-22.57674747-4.363457-31.11034375-13.06275419L76.05474375 131.89594663c-16.83244963-17.17765984-16.54247307-44.76685948 0.64899518-61.57169228 17.16385143-16.84625804 44.75305108-16.52866465 61.57169232 0.62137836L944.29983647 894.07865573c16.83244963 17.17765984 16.54247307 44.76685948-0.64899519 61.5716923-8.46455425 8.31266175-19.4560472 12.45518421-30.46134855 12.45518424z" p-id="58001"></path><path d="M107.1788959 968.10553227c11.29527793 0 22.57674747-4.363457 31.11034375-13.06275419l806.01059682-823.13302303c16.83244963-17.17765984 16.54247307-44.76685948-0.64899519-61.5716923-17.16385143-16.84625804-44.75305108-16.52866465-61.5716923 0.62137837L76.05474375 894.07865573c-16.83244963 17.17765984-16.54247307 44.76685948 0.64899518 61.5716923 8.46455425 8.31266175 19.46985561 12.45518421 30.47515697 12.45518424z" p-id="58002"></path></svg>
+        </view>
+      </Transition>
+      
     </view>
-    <view class="search">
+    <view class="search" @click="skipPage('/pages/search/hotSearch')">
       <svg class="icon-search" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="20491">
         <path
           d="M932.571429 493.714286C932.571429 261.485714 744.228571 73.142857 512 73.142857S91.428571 261.485714 91.428571 493.714286s188.342857 420.571429 420.571429 420.571428c89.6 0 171.885714-27.428571 239.542857-74.971428l111.542857 111.542857 51.2-51.2-106.057143-106.057143c76.8-76.8 124.342857-182.857143 124.342858-299.885714zM164.571429 493.714286C164.571429 301.714286 320 146.285714 512 146.285714s347.428571 155.428571 347.428571 347.428572-155.428571 347.428571-347.428571 347.428571S164.571429 685.714286 164.571429 493.714286z"
@@ -20,7 +37,7 @@
         <swiper-item class="hot-search-key">宽带,1000m</swiper-item>
       </swiper>
     </view>
-    <view class="info">
+    <view class="info" @click="skipPage('/pages/messageCenter/messageCenter')">
       <svg class="icon-info" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19450">
         <path
           d="M531.2 32c-275.2 0-499.2 192-499.2 428.8 0 140.8 51.2 256 153.6 339.2 0 0 0 57.6 0 140.8 0 38.4 12.8 51.2 32 51.2 19.2 0 32-12.8 32-12.8l153.6-89.6c32 6.4 96 12.8 128 12.8 275.2 0 460.8-204.8 460.8-441.6S761.6 32 531.2 32zM531.2 838.4c-25.6 0-89.6-6.4-115.2-6.4l-25.6-6.4-19.2 12.8-115.2 64 0-102.4L256 768l-25.6-19.2c-83.2-70.4-128-172.8-128-288 0-204.8 192-364.8 435.2-364.8 185.6 0 396.8 153.6 396.8 364.8C928 678.4 755.2 838.4 531.2 838.4z"
@@ -123,6 +140,24 @@ let styleType = computed(() => {
   }
 })
 
+const isShowUserMenu = ref(false) // 是否
+/**
+ * 打开账户菜单
+*/
+const openUserMenu = () => {
+  // 已登陆
+  userSearchInfoNavState.isShowUserMenu = true
+}
+
+/**
+ * 跳转搜索
+*/
+const skipPage = (data:string) => {
+  uni.navigateTo({
+    url: data
+  })
+}
+
 </script>
 <style lang="scss" scoped>
   .user-seach-info {
@@ -140,6 +175,7 @@ let styleType = computed(() => {
       font-size: 3.5vw;
       color: var(--font-color);
       flex-shrink: 0;
+      position: relative;
       .phone {
         font-size: 3.5vw;
         font-weight: bold;
@@ -159,6 +195,109 @@ let styleType = computed(() => {
           overflow: hidden;
           margin-left: 1vw;
         }
+      }
+      .account-box {
+        width: 60vw;
+        position: absolute;
+        box-sizing: border-box;
+        padding: 3vw;
+        background-color: #ffffff;
+        border-radius: 3vw;
+        z-index: 5;
+        box-shadow: 0vw 0.25vw 1vw #bdbdbd;
+        .head {
+          width: 100%;
+          font-size: 4vw;
+          font-weight: bold;
+          color: #090909;
+          text-align: center;
+          padding: 1vw 0;
+        }
+        .current-account {
+          width: 100%;
+          text-align: center;
+          color: #999999;
+          box-sizing: border-box;
+          padding: 1vw 0;
+          margin-bottom: 2vw;
+        }
+        .waiting-account {
+          width: 100%;
+          background-color: #f6f7f8;
+          box-sizing: border-box;
+          padding: 3vw 2vw;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2vw;
+          border-radius: 2vw;
+          .title {
+            font-size: 4vw;
+            font-weight: bold;
+            color: #090909;
+          }
+          .switch-but {
+            width: 11vw;
+            box-sizing: border-box;
+            padding: 1vw 1vw;
+            border-radius: 3vw;
+            font-size: 3vw;
+            font-weight: bold;
+            color: #fff;
+            background-color: #387ef6;
+            display: flex;
+            justify-content: center;
+            align-items: center
+          }
+        }
+        .login-account {
+          width: 100%;
+          background-color: #f6f7f8;
+          box-sizing: border-box;
+          padding: 3vw 2vw;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2vw;
+          border-radius: 2vw;
+          .title {
+            font-size: 4vw;
+            font-weight: bold;
+            color: #090909;
+          }
+          .login-but {
+            width: 11vw;
+            box-sizing: border-box;
+            padding: 1.2vw 1vw;
+            border-radius: 3.5vw;
+            border: 1px solid #999999;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            .icon {
+              width: 3vw;
+              height: 3vw;
+              vertical-align: middle;
+              fill: currentColor;
+              overflow: hidden;
+              color: #999999;
+            }
+          }
+        }
+                
+        
+      }
+      .close-but {
+        position: absolute;
+        top: 5vw;
+        right: 3vw;
+        width: 4vw;
+        height: 4vw;
+        vertical-align: middle;
+        fill: currentColor;
+        overflow: hidden;
+        color: #ababab;
+        z-index: 5;
       }
     }
 
@@ -285,6 +424,15 @@ let styleType = computed(() => {
 
     .menu-fade-enter-from,
     .menu-fade-leave-to {
+      opacity: 0;
+    }
+    .accountmenu-enter-active,
+    .accountmenu-leave-active {
+      transition: opacity 0.5s ease;
+    }
+    
+    .accountmenu-enter-from,
+    .accountmenu-leave-to {
       opacity: 0;
     }
   }

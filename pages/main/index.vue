@@ -102,12 +102,24 @@
   import equities from './equities.vue'; // 权益
   import my from './my.vue'; // 我的
   
+  import { useUserSearchInfoNavStore } from '@/stores/userSearchInfoNav' // 引入用户搜索信息状态
+  
+  const userSearchInfoNavState = useUserSearchInfoNavStore()
+  
   
   
   const title = ref('Hello');
   const current = ref(0);
 
   const swiperNav = (index : number) => {
+    if (userSearchInfoNavState.isShowMenu) {
+      // 关闭-->用户搜索信息状态
+      userSearchInfoNavState.isShowMenu = false
+    }
+    if (userSearchInfoNavState.isShowUserMenu) {
+      // 关闭-->用户搜索信息状态
+      userSearchInfoNavState.isShowUserMenu = false
+    }
     current.value = index
   }
 </script>
