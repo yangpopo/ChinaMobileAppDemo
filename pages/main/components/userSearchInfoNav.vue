@@ -1,28 +1,48 @@
 <template>
-  <view class="user-seach-info" @click.stop :style="{'--font-color': styleType.fontColor, '--background-color': styleType.backgroundColor}">
+  <view class="user-seach-info" @click.stop
+    :style="{'--font-color': styleType.fontColor, '--background-color': styleType.backgroundColor}">
     <view class="user" v-if="false" @click="openUserMenu">登录</view>
     <view class="user" v-else @click="openUserMenu">
       <view class="phone">
         158****1234
       </view>
-      <view class="switch">切换<svg class="icon"viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1776"><path d="M956.994933 307.22722c4.950755-11.95017 2.214435-25.705452-6.931876-34.851763L799.528576 121.840976l-45.227064 45.227064 95.941096 95.941096-722.30068 0 0 63.960731 799.507086 0C940.384627 326.969866 952.046225 319.179436 956.994933 307.22722zM959.430402 646.774543L159.923316 646.774543c-12.935614 0-24.596188 7.791453-29.54592 19.741623-4.950755 11.95017-2.214435 25.705452 6.931876 34.851763l150.534482 150.534482 45.227064-45.226041-95.941096-95.941096 722.30068 0L959.430402 646.774543z" p-id="1777"></path></svg></view>
-      
+      <view class="switch">切换<svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          p-id="1776">
+          <path
+            d="M956.994933 307.22722c4.950755-11.95017 2.214435-25.705452-6.931876-34.851763L799.528576 121.840976l-45.227064 45.227064 95.941096 95.941096-722.30068 0 0 63.960731 799.507086 0C940.384627 326.969866 952.046225 319.179436 956.994933 307.22722zM959.430402 646.774543L159.923316 646.774543c-12.935614 0-24.596188 7.791453-29.54592 19.741623-4.950755 11.95017-2.214435 25.705452 6.931876 34.851763l150.534482 150.534482 45.227064-45.226041-95.941096-95.941096 722.30068 0L959.430402 646.774543z"
+            p-id="1777"></path>
+        </svg></view>
+
       <Transition name="accountmenu">
         <view class="account-box" v-if="userSearchInfoNavState.isShowUserMenu" @click.stop>
           <view class="head">手机号切换</view>
           <view class="current-account">当前号码:158****1234</view>
           <view class="waiting-account" v-for="item in 3" :key="item">
             <text class="title">158****0000</text>
-            <view class="switch-but">切换</view></view>
+            <view class="switch-but">切换</view>
+          </view>
           <view class="login-account">
             <text class="title">其他账号登陆</text>
-            <view class="login-but"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="57007"><path d="M881 562H81c-27.6 0-50-22.4-50-50s22.4-50 50-50h800c27.6 0 50 22.4 50 50s-22.4 50-50 50zM907.6 540.7L695.5 328.6c-19.5-19.5-19.5-51.2 0-70.7s51.2-19.5 70.7 0L978.4 470c19.5 19.5 19.5 51.2 0 70.7-19.6 19.6-51.2 19.6-70.8 0zM695.5 695.4l212.1-212.1c19.5-19.5 51.2-19.5 70.7 0s19.5 51.2 0 70.7L766.2 766.1c-19.5 19.5-51.2 19.5-70.7 0s-19.5-51.2 0-70.7z" p-id="57008"></path></svg>
+            <view class="login-but"><svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="57007">
+                <path
+                  d="M881 562H81c-27.6 0-50-22.4-50-50s22.4-50 50-50h800c27.6 0 50 22.4 50 50s-22.4 50-50 50zM907.6 540.7L695.5 328.6c-19.5-19.5-19.5-51.2 0-70.7s51.2-19.5 70.7 0L978.4 470c19.5 19.5 19.5 51.2 0 70.7-19.6 19.6-51.2 19.6-70.8 0zM695.5 695.4l212.1-212.1c19.5-19.5 51.2-19.5 70.7 0s19.5 51.2 0 70.7L766.2 766.1c-19.5 19.5-51.2 19.5-70.7 0s-19.5-51.2 0-70.7z"
+                  p-id="57008"></path>
+              </svg>
             </view>
           </view>
-          <svg @click="userSearchInfoNavState.switchUserMenu" class="close-but" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="58000"><path d="M913.18949273 968.10553227c-11.29527793 0-22.57674747-4.363457-31.11034375-13.06275419L76.05474375 131.89594663c-16.83244963-17.17765984-16.54247307-44.76685948 0.64899518-61.57169228 17.16385143-16.84625804 44.75305108-16.52866465 61.57169232 0.62137836L944.29983647 894.07865573c16.83244963 17.17765984 16.54247307 44.76685948-0.64899519 61.5716923-8.46455425 8.31266175-19.4560472 12.45518421-30.46134855 12.45518424z" p-id="58001"></path><path d="M107.1788959 968.10553227c11.29527793 0 22.57674747-4.363457 31.11034375-13.06275419l806.01059682-823.13302303c16.83244963-17.17765984 16.54247307-44.76685948-0.64899519-61.5716923-17.16385143-16.84625804-44.75305108-16.52866465-61.5716923 0.62137837L76.05474375 894.07865573c-16.83244963 17.17765984-16.54247307 44.76685948 0.64899518 61.5716923 8.46455425 8.31266175 19.46985561 12.45518421 30.47515697 12.45518424z" p-id="58002"></path></svg>
+          <svg @click="userSearchInfoNavState.switchUserMenu" class="close-but" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="58000">
+            <path
+              d="M913.18949273 968.10553227c-11.29527793 0-22.57674747-4.363457-31.11034375-13.06275419L76.05474375 131.89594663c-16.83244963-17.17765984-16.54247307-44.76685948 0.64899518-61.57169228 17.16385143-16.84625804 44.75305108-16.52866465 61.57169232 0.62137836L944.29983647 894.07865573c16.83244963 17.17765984 16.54247307 44.76685948-0.64899519 61.5716923-8.46455425 8.31266175-19.4560472 12.45518421-30.46134855 12.45518424z"
+              p-id="58001"></path>
+            <path
+              d="M107.1788959 968.10553227c11.29527793 0 22.57674747-4.363457 31.11034375-13.06275419l806.01059682-823.13302303c16.83244963-17.17765984 16.54247307-44.76685948-0.64899519-61.5716923-17.16385143-16.84625804-44.75305108-16.52866465-61.5716923 0.62137837L76.05474375 894.07865573c-16.83244963 17.17765984-16.54247307 44.76685948 0.64899518 61.5716923 8.46455425 8.31266175 19.46985561 12.45518421 30.47515697 12.45518424z"
+              p-id="58002"></path>
+          </svg>
         </view>
       </Transition>
-      
+
     </view>
     <view class="search" @click="skipPage('/pages/search/hotSearch')">
       <svg class="icon-search" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="20491">
@@ -41,7 +61,7 @@
       <svg class="icon-info" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19450">
         <path
           d="M531.2 32c-275.2 0-499.2 192-499.2 428.8 0 140.8 51.2 256 153.6 339.2 0 0 0 57.6 0 140.8 0 38.4 12.8 51.2 32 51.2 19.2 0 32-12.8 32-12.8l153.6-89.6c32 6.4 96 12.8 128 12.8 275.2 0 460.8-204.8 460.8-441.6S761.6 32 531.2 32zM531.2 838.4c-25.6 0-89.6-6.4-115.2-6.4l-25.6-6.4-19.2 12.8-115.2 64 0-102.4L256 768l-25.6-19.2c-83.2-70.4-128-172.8-128-288 0-204.8 192-364.8 435.2-364.8 185.6 0 396.8 153.6 396.8 364.8C928 678.4 755.2 838.4 531.2 838.4z"
-           p-id="19451"></path>
+          p-id="19451"></path>
         <path d="M288 467.2m-57.6 0a0.9 0.9 0 1 0 115.2 0 0.9 0.9 0 1 0-115.2 0Z" p-id="19452"></path>
         <path d="M512 467.2m-57.6 0a0.9 0.9 0 1 0 115.2 0 0.9 0.9 0 1 0-115.2 0Z" p-id="19453"></path>
         <path d="M736 467.2m-57.6 0a0.9 0.9 0 1 0 115.2 0 0.9 0.9 0 1 0-115.2 0Z" p-id="19454"></path>
@@ -67,7 +87,7 @@
                 p-id="31580"></path>
             </svg>English
           </view> -->
-          <view class="menu-item">
+          <view class="menu-item" @click="skipCaring">
             <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32432">
               <path
                 d="M957.812555 342.146521c-10.641361-80.458473-57.284681-150.320611-127.974673-191.667298-99.018178-57.929364-227.815589-37.896098-313.223794 48.675606l-4.055362 4.121877-4.065596-4.121877c-85.418438-86.571704-214.20664-106.60497-313.223794-48.675606-70.680782 41.34157-117.323079 111.199615-127.96444 191.662181-10.733459 81.179904 15.672958 160.744008 72.438822 218.291678 12.105712 12.263301 31.884175 12.400425 44.152593 0.299829 12.277628-12.110829 12.410658-31.879058 0.304945-44.157709-43.136449-43.720757-63.169715-104.31788-54.987359-166.252465 8.100492-61.208037 43.664475-114.400516 97.584526-145.944953 74.339102-43.476187 171.893952-27.600615 237.238193 38.627762l26.28362 26.649963c5.864568 5.950526 13.873985 9.299807 22.228257 9.299807 8.354272 0 16.353456-3.349281 22.228257-9.289574l26.293853-26.649963c65.344241-66.243727 162.898067-82.115206 237.238193-38.637995 53.930283 31.544437 89.494267 84.742033 97.594759 145.955186 8.182356 61.929468-11.861142 122.521474-54.997592 166.242232-12.105712 12.272511-11.973706 32.04688 0.294712 44.157709 6.088672 6.001691 14.016225 8.994861 21.933545 8.994861 8.05956 0 16.120143-3.104711 22.228257-9.29469C942.130388 502.890528 968.535781 423.326425 957.812555 342.146521z"
@@ -87,7 +107,7 @@
             </svg>
             关怀版
           </view>
-          <view class="menu-item">
+          <view class="menu-item" @click="openScanQRCode">
             <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33460">
               <path
                 d="M708.775642 131.306558l179.428555 0 0 179.428555c0 18.584264 15.069207 33.643238 33.643238 33.643238s33.643238-15.057951 33.643238-33.643238L955.490673 131.306558c0-43.280736-24.00574-67.285452-67.285452-67.285452L708.775642 64.021106c-18.574031 0-33.643238 15.057951-33.643238 33.643238S690.202635 131.306558 708.775642 131.306558zM91.989087 344.378351c18.584264 0 33.643238-15.069207 33.643238-33.643238L125.632325 131.306558l187.838086 0c18.584264 0 33.643238-15.069207 33.643238-33.643238s-15.057951-33.643238-33.643238-33.643238L134.040832 64.020082c-43.280736 0-75.694983 24.00574-75.694983 67.285452l0 179.428555C58.34585 329.309144 73.4038 344.378351 91.989087 344.378351zM921.848459 680.80766c-18.574031 0-33.643238 15.057951-33.643238 33.643238l0 179.429579L708.775642 893.880477c-18.574031 0-33.643238 15.057951-33.643238 33.643238s15.069207 33.643238 33.643238 33.643238l179.428555 0c43.280736 0 67.285452-24.00574 67.285452-67.285452L955.48965 714.450898C955.490673 695.866634 940.421466 680.80766 921.848459 680.80766zM313.470411 893.879454l-187.838086 0L125.632325 714.450898c0-18.574031-15.057951-33.643238-33.643238-33.643238s-33.643238 15.069207-33.643238 33.643238l0 179.429579c0 43.280736 32.41527 67.285452 75.694983 67.285452l179.429579 0c18.584264 0 33.643238-15.069207 33.643238-33.643238S332.054675 893.879454 313.470411 893.879454zM955.490673 490.164692 58.34585 490.164692c-18.574031 0-33.643238 15.057951-33.643238 33.643238 0 18.584264 15.069207 33.643238 33.643238 33.643238l897.145847 0c18.574031 0 33.643238-15.057951 33.643238-33.643238C989.133911 505.222643 974.064704 490.164692 955.490673 490.164692z"
@@ -95,14 +115,14 @@
             </svg>
             扫一扫
           </view>
-          <view class="menu-item"><svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+          <view class="menu-item" @click="openShareMenu"><svg class="icon" viewBox="0 0 1024 1024" version="1.1"
               xmlns="http://www.w3.org/2000/svg" p-id="34163">
               <path
                 d="M853.333333 533.333333a32 32 0 0 1 64 0v266.666667c0 64.8-52.533333 117.333333-117.333333 117.333333H224c-64.8 0-117.333333-52.533333-117.333333-117.333333V256c0-64.8 52.533333-117.333333 117.333333-117.333333h277.333333a32 32 0 0 1 0 64H224a53.333333 53.333333 0 0 0-53.333333 53.333333v544a53.333333 53.333333 0 0 0 53.333333 53.333333h576a53.333333 53.333333 0 0 0 53.333333-53.333333V533.333333z m-42.058666-277.333333l-89.792-95.402667a32 32 0 0 1 46.613333-43.861333l140.544 149.333333C927.861333 286.485333 913.376 320 885.333333 320H724.704C643.029333 320 576 391.210667 576 480v192a32 32 0 1 1-64 0V480c0-123.296 94.784-224 212.704-224h86.570667z"
                 fill="#fff" p-id="34164"></path>
             </svg>
             分享</view>
-          <view class="menu-item">
+          <view class="menu-item" @click="skipPage('/pages/service/myService')">
             <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="35029">
               <path
                 d="M927.616 465.6C923.328 236.704 745.888 51.808 528 51.808h-32c-217.888 0-395.328 184.896-399.616 413.76C58.112 487.744 32 528.672 32 576v64c0 70.592 57.408 128 128 128s128-57.408 128-128v-64a128.064 128.064 0 0 0-126.784-127.872C173.728 262.688 318.912 115.808 496 115.808h32c177.12 0 322.272 146.88 334.784 332.32A128.064 128.064 0 0 0 736 576v64c0 57.792 38.72 106.176 91.392 122.016a337.504 337.504 0 0 1-191.936 124.48A79.712 79.712 0 0 0 560 832a80 80 0 1 0 0 160 79.68 79.68 0 0 0 67.872-38.112 402.432 402.432 0 0 0 278.24-193.6C955.968 742.816 992 695.776 992 640v-64c0-47.328-26.112-88.256-64.384-110.4zM224 576v64c0 35.296-28.704 64-64 64s-64-28.704-64-64v-64c0-35.296 28.704-64 64-64s64 28.704 64 64z m704 64c0 34.304-27.2 62.176-61.12 63.712l-2.496-1.184c-0.224 0.512-0.576 0.928-0.8 1.408A64 64 0 0 1 800 640v-64c0-35.296 28.704-64 64-64s64 28.704 64 64v64z"
@@ -112,52 +132,96 @@
           </view>
         </view>
       </Transition>
-
     </view>
+    
   </view>
 </template>
 
 <script lang="ts" setup>
   import { ref, defineProps, computed } from 'vue'
   import { useUserSearchInfoNavStore } from '@/stores/userSearchInfoNav'
+    import { useShareMenuStore } from '@/stores/shareMenu'
 
-  const userSearchInfoNavState = useUserSearchInfoNavStore() // 引入pinia状态
+  const userSearchInfoNavState = useUserSearchInfoNavStore() // 引入用户信息状态
+  const shareMenuStore = useShareMenuStore() // 引入分享菜单状态
 
 
   const props = defineProps(['styleType']) // 引入样式类型
 
-let styleType = computed(() => {
-  if (props.styleType == 'light') {
-    return {
-      'fontColor':'#fff',
-      'backgroundColor': 'rgba(255, 255, 255, 0.5)',
+  let styleType = computed(() => {
+    if (props.styleType == 'light') {
+      return {
+        'fontColor': '#fff',
+        'backgroundColor': 'rgba(255, 255, 255, 0.5)',
+      }
+    } else if (props.styleType == 'dark') {
+      return {
+        'fontColor': '#2d2b2c',
+        'backgroundColor': '#ebe9ea',
+      }
     }
-  } else if (props.styleType == 'dark') {
-    return {
-      'fontColor':'#2d2b2c',
-      'backgroundColor': '#ebe9ea',
-    }
-  }
-})
-
-const isShowUserMenu = ref(false) // 是否
-/**
- * 打开账户菜单
-*/
-const openUserMenu = () => {
-  // 已登陆
-  userSearchInfoNavState.isShowUserMenu = true
-}
-
-/**
- * 跳转搜索
-*/
-const skipPage = (data:string) => {
-  uni.navigateTo({
-    url: data
   })
-}
 
+  const isShowUserMenu = ref(false) // 是否
+  /**
+   * 打开账户菜单
+  */
+  const openUserMenu = () => {
+    // 已登陆
+    userSearchInfoNavState.isShowUserMenu = true
+  }
+
+  /**
+   * 跳转搜索
+  */
+  const skipPage = (data : string) => {
+    uni.navigateTo({
+      url: data
+    })
+  }
+
+  /**
+   * 跳转关怀版
+  */
+  const skipCaring = () => {
+    uni.showToast({
+      title: '正在开发,敬请期待!',
+      icon: 'none'
+    })
+    userSearchInfoNavState.isShowMenu = false
+  }
+
+  /**
+   * 打开扫一扫
+  */
+  const openScanQRCode = () => {
+    // #ifdef H5
+    uni.showToast({
+      title: '仅支持在app或小程序中调用摄像头',
+      icon: 'none'
+    })
+    // #endif
+    // #ifndef H5
+    uni.scanCode({
+      scanType: ['qrCode'],
+      success: (res) => {
+        console.log('扫描成功!', res)
+      },
+      fail: (err) => {
+        console.log('扫描失败!', err)
+      }
+    })
+    // #endif
+    userSearchInfoNavState.isShowMenu = false
+  }
+
+  /**
+   * 打开分享
+  */
+  const openShareMenu = () => {
+    shareMenuStore.isShowShareMenu = true
+    userSearchInfoNavState.isShowMenu = false
+  }
 </script>
 <style lang="scss" scoped>
   .user-seach-info {
@@ -176,17 +240,20 @@ const skipPage = (data:string) => {
       color: var(--font-color);
       flex-shrink: 0;
       position: relative;
+
       .phone {
         font-size: 3.5vw;
         font-weight: bold;
         color: var(--font-color);
         margin-bottom: -1vw;
       }
+
       .switch {
         display: flex;
         align-items: center;
         font-size: 3vw;
         color: var(--font-color);
+
         .icon {
           width: 3vw;
           height: 3vw;
@@ -196,6 +263,7 @@ const skipPage = (data:string) => {
           margin-left: 1vw;
         }
       }
+
       .account-box {
         width: 60vw;
         position: absolute;
@@ -205,6 +273,7 @@ const skipPage = (data:string) => {
         border-radius: 3vw;
         z-index: 5;
         box-shadow: 0vw 0.25vw 1vw #bdbdbd;
+
         .head {
           width: 100%;
           font-size: 4vw;
@@ -213,6 +282,7 @@ const skipPage = (data:string) => {
           text-align: center;
           padding: 1vw 0;
         }
+
         .current-account {
           width: 100%;
           text-align: center;
@@ -221,6 +291,7 @@ const skipPage = (data:string) => {
           padding: 1vw 0;
           margin-bottom: 2vw;
         }
+
         .waiting-account {
           width: 100%;
           background-color: #f6f7f8;
@@ -231,11 +302,13 @@ const skipPage = (data:string) => {
           align-items: center;
           margin-bottom: 2vw;
           border-radius: 2vw;
+
           .title {
             font-size: 4vw;
             font-weight: bold;
             color: #090909;
           }
+
           .switch-but {
             width: 11vw;
             box-sizing: border-box;
@@ -250,6 +323,7 @@ const skipPage = (data:string) => {
             align-items: center
           }
         }
+
         .login-account {
           width: 100%;
           background-color: #f6f7f8;
@@ -260,11 +334,13 @@ const skipPage = (data:string) => {
           align-items: center;
           margin-bottom: 2vw;
           border-radius: 2vw;
+
           .title {
             font-size: 4vw;
             font-weight: bold;
             color: #090909;
           }
+
           .login-but {
             width: 11vw;
             box-sizing: border-box;
@@ -272,8 +348,9 @@ const skipPage = (data:string) => {
             border-radius: 3.5vw;
             border: 1px solid #999999;
             display: flex;
-            justify-content:center;
+            justify-content: center;
             align-items: center;
+
             .icon {
               width: 3vw;
               height: 3vw;
@@ -284,9 +361,10 @@ const skipPage = (data:string) => {
             }
           }
         }
-                
-        
+
+
       }
+
       .close-but {
         position: absolute;
         top: 5vw;
@@ -426,14 +504,16 @@ const skipPage = (data:string) => {
     .menu-fade-leave-to {
       opacity: 0;
     }
+
     .accountmenu-enter-active,
     .accountmenu-leave-active {
       transition: opacity 0.5s ease;
     }
-    
+
     .accountmenu-enter-from,
     .accountmenu-leave-to {
       opacity: 0;
     }
+    
   }
 </style>

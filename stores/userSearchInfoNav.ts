@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-export const useUserSearchInfoNavStore = defineStore('counter', {
+export const useUserSearchInfoNavStore = defineStore('UserSearchInfoNav', {
   state: () => {
     return { 
       isShowMenu: false, // 是否显示菜单
@@ -18,7 +18,6 @@ export const useUserSearchInfoNavStore = defineStore('counter', {
     * 切换显示菜单
     */
     switchUserMenu() {
-      console.log('      console.log56456464()')
       this.isShowUserMenu = !this.isShowUserMenu
     },
   },

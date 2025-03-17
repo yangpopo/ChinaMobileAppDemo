@@ -92,6 +92,8 @@
         <text class="title" :class="{'selected' : current == 3}">我的</text>
       </view>
     </view>
+    <!-- 分享菜单 -->
+    <shareMenu />
   </view>
 </template>
 
@@ -101,6 +103,7 @@
   import explore from './explore.vue'; // 探索
   import equities from './equities.vue'; // 权益
   import my from './my.vue'; // 我的
+  import shareMenu from '../components/shareMenu.vue'; // 分享菜单
   
   import { useUserSearchInfoNavStore } from '@/stores/userSearchInfoNav' // 引入用户搜索信息状态
   
