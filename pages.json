@@ -53,6 +53,12 @@
       "style": {
         "navigationStyle": "custom"
       }
+    },
+    {
+      "path": "pages/bill/billHome",
+      "style": {
+        "navigationStyle": "custom"
+      }
     }
   ],
   "globalStyle": {

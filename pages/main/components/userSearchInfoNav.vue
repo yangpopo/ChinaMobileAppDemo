@@ -140,7 +140,7 @@
 <script lang="ts" setup>
   import { ref, defineProps, computed } from 'vue'
   import { useUserSearchInfoNavStore } from '@/stores/userSearchInfoNav'
-    import { useShareMenuStore } from '@/stores/shareMenu'
+  import { useShareMenuStore } from '@/stores/shareMenu'
 
   const userSearchInfoNavState = useUserSearchInfoNavStore() // 引入用户信息状态
   const shareMenuStore = useShareMenuStore() // 引入分享菜单状态

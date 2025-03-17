@@ -1,6 +1,6 @@
 <template>
-  <view class="voucher-center">
-    <uni-nav-bar class="nav-bar" :border="false">
+  <view class="bill">
+    <uni-nav-bar class="nav-bar" :border="false" backgroundColor="#e0effd">
       <view slot="left" @click="returnNextPage" class="left">
         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="59072">
           <path
@@ -8,14 +8,14 @@
             p-id="59073"></path>
         </svg>
       </view>
-      <view class="title">充值中心</view>
+      <view class="title">话费账单</view>
       <view slot="right" class="right">
-        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="41752">
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13884">
           <path
-            d="M865.745455 102.4C865.745455 102.4 865.745455 102.4 865.745455 102.4 865.745455 99.29697 865.745455 99.29697 865.745455 102.4c-18.618182-24.824242-46.545455-40.339394-77.575758-40.339394l-574.060606 0c-55.854545 0-99.29697 43.442424-99.29697 99.29697l0 698.181818c0 55.854545 43.442424 99.29697 99.29697 99.29697l574.060606 0c55.854545 0 99.29697-43.442424 99.29697-99.29697l0-698.181818C887.466667 139.636364 881.260606 117.915152 865.745455 102.4zM788.169697 111.709091c3.10303 0 9.309091 0 12.412121 3.10303l-291.684848 186.181818-313.406061-186.181818c6.206061-3.10303 12.412121-3.10303 18.618182-3.10303L788.169697 111.709091zM837.818182 862.642424c0 27.927273-21.721212 49.648485-49.648485 49.648485l-574.060606 0c-27.927273 0-49.648485-21.721212-49.648485-49.648485l0-698.181818c0-3.10303 0-3.10303 0-6.206061l332.024242 195.490909c9.309091 6.206061 18.618182 3.10303 24.824242 0l316.509091-201.69697c0 3.10303 3.10303 9.309091 3.10303 12.412121L840.921212 862.642424zM639.224242 561.648485c12.412121 0 24.824242-12.412121 24.824242-24.824242 0-12.412121-12.412121-24.824242-24.824242-24.824242l-83.781818 0 71.369697-71.369697c9.309091-9.309091 9.309091-24.824242 0-34.133333-9.309091-9.309091-24.824242-9.309091-34.133333 0l-80.678788 80.678788c0 0-3.10303 0-3.10303 0 0 0 0 0 0 0l-77.575758-77.575758c-9.309091-9.309091-24.824242-9.309091-34.133333 0-9.309091 9.309091-9.309091 24.824242 0 34.133333l68.266667 68.266667-74.472727 0c-12.412121 0-24.824242 12.412121-24.824242 24.824242 0 12.412121 12.412121 24.824242 24.824242 24.824242l93.090909 0 0 74.472727-93.090909 0c-12.412121 0-24.824242 12.412121-24.824242 24.824242 0 12.412121 12.412121 24.824242 24.824242 24.824242l93.090909 0 0 89.987879c0 12.412121 12.412121 24.824242 24.824242 24.824242 12.412121 0 24.824242-12.412121 24.824242-24.824242l0-89.987879 108.606061 0c12.412121 0 24.824242-12.412121 24.824242-24.824242 0-12.412121-12.412121-24.824242-24.824242-24.824242l-108.606061 0 0-74.472727L639.224242 561.648485z"
-            p-id="41753"></path>
+            d="M891.152 96H649.904a172.4 172.4 0 0 0-137.84 68.56A172.4 172.4 0 0 0 374.224 96H132.976C94.976 96 64 126.624 64 164.368v633.184c0 37.76 30.848 68.384 68.976 68.384h253.28a180.512 180.512 0 0 0 125.808 51.392 180.48 180.48 0 0 0 125.744-51.392h253.28c38.08 0 68.912-30.512 68.912-68.384V164.368C960.064 126.768 929.28 96 891.152 96z m0 701.552H622.88c-10.112 0-19.776 4.32-26.112 11.952-21.76 25.04-52.48 39.328-84.72 39.328-32.256 0-63.152-14.288-84.656-39.328a34.88 34.88 0 0 0-26.24-11.952H133.04V164.368h241.248c57.024 0 103.36 46.08 103.36 102.688v291.008c0 18.88 15.36 34.128 34.48 34.128a34.272 34.272 0 0 0 34.496-34.128V267.056c0-56.688 46.192-102.688 103.28-102.688H891.2l-0.064 633.184z"
+            fill="#000000" p-id="13885"></path>
         </svg>
-        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="44538">
+        <svg @click="" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="44538">
           <path
             d="M848 384h-33.6C806.4 224 675.2 96 512 96s-294.4 128-302.4 288H176c-52.8 0-96 43.2-96 96v64c0 52.8 43.2 96 96 96h32c35.2 0 64-28.8 64-64V400c0-132.8 107.2-240 240-240s240 107.2 240 240v224c0 97.6-67.2 179.2-156.8 201.6-11.2-16-30.4-25.6-51.2-25.6h-64c-35.2 0-64 28.8-64 64s28.8 64 64 64h64c25.6 0 49.6-16 59.2-38.4C720 864 808 763.2 816 640h32c52.8 0 96-43.2 96-96v-64c0-52.8-43.2-96-96-96zM176 576c-17.6 0-32-14.4-32-32v-64c0-17.6 14.4-32 32-32h32v128h-32z m704-32c0 17.6-14.4 32-32 32h-32v-128h32c17.6 0 32 14.4 32 32v64z"
             p-id="44539"></path>
@@ -31,33 +31,17 @@
 
     <scroll-view :scroll-y="true" :show-scrollbar="false" class="scroll-main">
       <view class="main">
-        <view class="menu-class">
-          <view class="menu-item" :class="{'selected': currentMenu == 'telephoneCharge'}"
-            @click="switchMenu('telephoneCharge')">
-            话费
-          </view>
-          <view class="menu-item" :class="{'selected': currentMenu == 'flow'}" @click="switchMenu('flow')">
-            流量
-          </view>
-          <view class="menu-item" :class="{'selected': currentMenu == 'livingPayment'}"
-            @click="switchMenu('livingPayment')">
-            生活缴费
-          </view>
-          <view class="menu-item" :class="{'selected': currentMenu == 'bus'}" @click="switchMenu('bus')">
-            充公交
-          </view>
+        <image class="bill-home-ad" src="/assets/image/bill/bill-home-ad.png" mode="widthFix"></image>
+        <view class="user-box">
+          
         </view>
 
-        <topUpMobilePhone v-if="currentMenu == 'telephoneCharge'" />
-        <topUpFlow v-else-if="currentMenu == 'flow'" />
-        <topUpLivingPayment v-else-if="currentMenu == 'livingPayment'" />
-        <topUpBus v-else-if="currentMenu == 'bus'" />
+
 
 
 
       </view>
     </scroll-view>
-    
     <!-- 分享菜单 -->
     <shareMenu />
   </view>
@@ -65,23 +49,12 @@
 
 <script lang="ts" setup>
   import { ref, onMounted } from 'vue'
-  import topUpMobilePhone from './components/topUpMobilePhone' // 充值手机
-  import topUpFlow from './components/topUpFlow' // 充值流量
-  import topUpLivingPayment from './components/topUpLivingPayment' // 生活缴费
-  import topUpBus from './components/topUpBus' // 公交充值
   import shareMenu from '../components/shareMenu.vue' // 分享菜单
   import { useShareMenuStore } from '@/stores/shareMenu' // 引入分享菜单状态
 
   const shareMenuStore = useShareMenuStore() // 引入分享菜单状态
 
 
-  const currentMenu = ref('telephoneCharge') // 当前菜单
-  /**
-   * 切换菜单
-  */
-  const switchMenu = (val : string) => {
-    currentMenu.value = val
-  }
 
   /**
      * 打开分享
@@ -105,16 +78,15 @@
 </script>
 
 <style lang="scss" scoped>
-  .voucher-center {
+  .bill {
     width: 100vw;
     height: 100vh;
     position: relative;
 
-
     .nav-bar {
       width: 100%;
       position: relative;
-      border-bottom: 1px solid #eff0f1;
+      border-bottom: none;
 
       .left {
         position: absolute;
@@ -181,53 +153,17 @@
       height: calc(100vh - 12.5vw);
       box-sizing: border-box;
       padding: 0vw;
-      background-color: #f4f7f9;
+      background-color: #e0effd;
 
       .main {
         width: 100%;
-
-        .menu-class {
-          width: 100%;
-          background-color: #fff;
-          box-sizing: border-box;
-          padding: 3vw 3vw 5vw 3vw;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          box-sizing: border-box;
-
-          .menu-item {
-            width: 25%;
-            font-size: 3.8vw;
-            color: #333333;
-            text-align: center;
-
-            &.selected {
-              font-weight: bold;
-              position: relative;
-
-              &:before {
-                content: '';
-                position: absolute;
-                width: 6vw;
-                height: 1vw;
-                background-color: #489ae5;
-                border-radius: 2vw;
-                bottom: -3vw;
-                left: 50%;
-                transform: translateX(-50%);
-
-              }
-            }
-          }
+        .bill-home-ad {
+          width: calc(100% - 6vw);
+          display: block;
+          margin: 0 auto 5vw auto;
         }
 
       }
-
-
-
-
-
     }
   }
 </style>

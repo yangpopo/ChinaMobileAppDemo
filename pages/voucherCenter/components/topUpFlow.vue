@@ -135,18 +135,121 @@
       </view>
       
       <scroll-view class="scroll-box" :scroll-x="true" :show-scrollbar="false">
-        <view>
+        <view style="display: flex;">
           <view class="scroll-item" v-for="item in 10" :key="item">
-            <view class="item">
-              <view class="title">2GB</view>
-              <view class="subhead">5.00元</view>
-              <view class="tag">小时包</view>
-            </view>
+            <view class="title">2GB</view>
+            <view class="subhead">5.00元</view>
+            <view class="tag">小时包</view>
           </view>
         </view>
       </scroll-view>
     </view>
+    
+    
+    <view class="column-title">
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2728"><path d="M533.16837023 67.46421873c46.57041483 0 84.67348253 38.10306768 84.67348254 84.67348094v677.38785861c0 46.57041483-38.10306768 84.67348253-84.67348254 84.67348252s-84.67348253-38.10306768-84.67348252-84.67348252v-677.38785861c0-46.57041483 38.10306768-84.67348253 84.67348252-84.67348094z" p-id="2729"></path></svg>
+      <text class="title">个性包</text>
+      <text class="subhead">满足您的个性化需求<svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3104"><path d="M463.99957 784.352211c0 26.509985 21.490445 48.00043 48.00043 48.00043s48.00043-21.490445 48.00043-48.00043c0-26.509985-21.490445-48.00043-48.00043-48.00043S463.99957 757.842226 463.99957 784.352211z" p-id="3105"></path><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z" p-id="3106"></path><path d="M512 673.695256c-17.664722 0-32.00086-14.336138-32.00086-31.99914l0-54.112297c0-52.352533 39.999785-92.352318 75.32751-127.647359 25.887273-25.919957 52.67249-52.67249 52.67249-74.016718 0-53.343368-43.07206-96.735385-95.99914-96.735385-53.823303 0-95.99914 41.535923-95.99914 94.559333 0 17.664722-14.336138 31.99914-32.00086 31.99914s-32.00086-14.336138-32.00086-31.99914c0-87.423948 71.775299-158.559333 160.00086-158.559333s160.00086 72.095256 160.00086 160.735385c0 47.904099-36.32028 84.191695-71.424378 119.295794-27.839699 27.776052-56.575622 56.511974-56.575622 82.3356l0 54.112297C544.00086 659.328155 529.664722 673.695256 512 673.695256z" p-id="3107"></path></svg></text>
+    </view>
 
+
+    <view class="top-up-pack">
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">5GB</view>
+          <view class="subhead">6.00元</view>
+          <view class="tag">直充包</view>
+        </view>
+      </view>
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">5GB</view>
+          <view class="subhead">6.00元</view>
+          <view class="tag">直充包</view>
+        </view>
+      </view>
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">5GB</view>
+          <view class="subhead">10.00元</view>
+          <view class="tag">7天包</view>
+        </view>
+      </view>
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">5GB</view>
+          <view class="subhead">10.00元</view>
+          <view class="tag">夜间包</view>
+        </view>
+      </view>
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">15GB</view>
+          <view class="subhead">9.00元</view>
+          <view class="tag">阿里</view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="column-title">
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2728"><path d="M533.16837023 67.46421873c46.57041483 0 84.67348253 38.10306768 84.67348254 84.67348094v677.38785861c0 46.57041483-38.10306768 84.67348253-84.67348254 84.67348252s-84.67348253-38.10306768-84.67348252-84.67348252v-677.38785861c0-46.57041483 38.10306768-84.67348253 84.67348252-84.67348094z" p-id="2729"></path></svg>
+      <text class="title">半年包</text>
+      <text class="subhead">180天有效,到期自动失效<svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3104"><path d="M463.99957 784.352211c0 26.509985 21.490445 48.00043 48.00043 48.00043s48.00043-21.490445 48.00043-48.00043c0-26.509985-21.490445-48.00043-48.00043-48.00043S463.99957 757.842226 463.99957 784.352211z" p-id="3105"></path><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z" p-id="3106"></path><path d="M512 673.695256c-17.664722 0-32.00086-14.336138-32.00086-31.99914l0-54.112297c0-52.352533 39.999785-92.352318 75.32751-127.647359 25.887273-25.919957 52.67249-52.67249 52.67249-74.016718 0-53.343368-43.07206-96.735385-95.99914-96.735385-53.823303 0-95.99914 41.535923-95.99914 94.559333 0 17.664722-14.336138 31.99914-32.00086 31.99914s-32.00086-14.336138-32.00086-31.99914c0-87.423948 71.775299-158.559333 160.00086-158.559333s160.00086 72.095256 160.00086 160.735385c0 47.904099-36.32028 84.191695-71.424378 119.295794-27.839699 27.776052-56.575622 56.511974-56.575622 82.3356l0 54.112297C544.00086 659.328155 529.664722 673.695256 512 673.695256z" p-id="3107"></path></svg></text>
+    </view>
+    
+    <view class="top-up-pack">
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">30GB</view>
+          <view class="subhead">180.00元</view>
+          <view class="tag">半年包</view>
+        </view>
+      </view>
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">60GB</view>
+          <view class="subhead">300.00元</view>
+          <view class="tag">半年包</view>
+        </view>
+      </view>
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">100GB</view>
+          <view class="subhead">420.00元</view>
+          <view class="tag">半年包</view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="column-title">
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2728"><path d="M533.16837023 67.46421873c46.57041483 0 84.67348253 38.10306768 84.67348254 84.67348094v677.38785861c0 46.57041483-38.10306768 84.67348253-84.67348254 84.67348252s-84.67348253-38.10306768-84.67348252-84.67348252v-677.38785861c0-46.57041483 38.10306768-84.67348253 84.67348252-84.67348094z" p-id="2729"></path></svg>
+      <text class="title">年包</text>
+      <text class="subhead">360天有效,到期自动失效<svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3104"><path d="M463.99957 784.352211c0 26.509985 21.490445 48.00043 48.00043 48.00043s48.00043-21.490445 48.00043-48.00043c0-26.509985-21.490445-48.00043-48.00043-48.00043S463.99957 757.842226 463.99957 784.352211z" p-id="3105"></path><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z" p-id="3106"></path><path d="M512 673.695256c-17.664722 0-32.00086-14.336138-32.00086-31.99914l0-54.112297c0-52.352533 39.999785-92.352318 75.32751-127.647359 25.887273-25.919957 52.67249-52.67249 52.67249-74.016718 0-53.343368-43.07206-96.735385-95.99914-96.735385-53.823303 0-95.99914 41.535923-95.99914 94.559333 0 17.664722-14.336138 31.99914-32.00086 31.99914s-32.00086-14.336138-32.00086-31.99914c0-87.423948 71.775299-158.559333 160.00086-158.559333s160.00086 72.095256 160.00086 160.735385c0 47.904099-36.32028 84.191695-71.424378 119.295794-27.839699 27.776052-56.575622 56.511974-56.575622 82.3356l0 54.112297C544.00086 659.328155 529.664722 673.695256 512 673.695256z" p-id="3107"></path></svg></text>
+    </view>
+    
+    <view class="top-up-pack">
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">30GB</view>
+          <view class="subhead">180.00元</view>
+          <view class="tag">年包</view>
+        </view>
+      </view>
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">60GB</view>
+          <view class="subhead">300.00元</view>
+          <view class="tag">年包</view>
+        </view>
+      </view>
+      <view class="pack-item">
+        <view class="item-box">
+          <view class="title">100GB</view>
+          <view class="subhead">420.00元</view>
+          <view class="tag">年包</view>
+        </view>
+      </view>
+    </view>
 
 
 
@@ -388,12 +491,15 @@
     
     .top-up-pack {
       width: 100%;
-      padding: 0 3vw 3vw 3vw;
+      padding: 0 3vw 0vw 3vw;
       box-sizing: border-box;
       display: flex;
+      flex-wrap: wrap;
       margin-bottom: 3vw;
       .pack-item {
         width: 33.33%;
+        flex-shrink: 0;
+        margin-bottom: 2vw;
         .item-box {
           width: 95%;
           margin: 0 auto;
@@ -443,6 +549,7 @@
       box-sizing: border-box;
       padding: 4vw 3vw;
       background-image: linear-gradient(0deg, #e6794b, #fcefe5);
+      margin-bottom: 3vw;
       .hot-title{
         width: 100%;
         display: flex;
@@ -459,7 +566,53 @@
           color: #272727;
         }
       }
+      .scroll-box {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        .scroll-item {
+          width: 30vw;
+          margin-right: 2vw;
+          box-sizing: border-box;
+          padding: 3.8vw 2vw;
+          position: relative;
+          align-items: center;
+          border-radius: 2vw;
+          background-image: linear-gradient(0deg, #fdf4f0, #ffffff);
+          flex-shrink: 0;
+          .title {
+            font-size: 4vw;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1vw;
+            color: #333333;
+          }
+          .subhead {
+            font-size: 3vw;
+            text-align: center;
+            color: #999999;
+          }
+          .tag {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #f3b05b;
+            width: 45%;
+            box-sizing: border-box;
+            padding: 0.5vw 1vw;
+            zoom: 0.9;
+            font-size: 3vw;
+            white-space: nowrap;
+            color: #fff;
+            border-radius: 2vw 0 2vw 0;
+            text-align: center;
+          }
+          
+        }
+      }
     }
+    
+    
 
 
 
