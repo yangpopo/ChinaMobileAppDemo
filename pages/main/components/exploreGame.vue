@@ -2,55 +2,49 @@
   <view class="main">
     <swiper class="ad-swiper" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)"
       indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
-      <swiper-item>
-        <image class="swiper-item-img" src="/assets/image/home/mobile-phone-ad.png" mode="widthFix"></image>
-      </swiper-item>
-      <swiper-item>
-        <image class="swiper-item-img" src="/assets/image/home/mobile-phone-ad.png" mode="widthFix"></image>
-      </swiper-item>
-      <swiper-item>
+      <swiper-item v-for="item in 10" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
         <image class="swiper-item-img" src="/assets/image/home/mobile-phone-ad.png" mode="widthFix"></image>
       </swiper-item>
     </swiper>
 
     <view class="menu-list">
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-01.png" mode="widthFix"></image>
         <view class="name">网易</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/daysTicket')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-02.png" mode="widthFix"></image>
         <view class="name">咪咕掼蛋</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/supercardGuard')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-03.png" mode="widthFix"></image>
         <view class="name">益智健康</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-04.png" mode="widthFix"></image>
         <view class="name">视频</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/flow20gb-1yuan')" >
         <image class="icon" src="/assets/image/explore/game-menu-icon-05.png" mode="widthFix"></image>
         <view class="name">全部游戏</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/daysTicket')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-06.png" mode="widthFix"></image>
         <view class="name">聚宝盆</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/supercardGuard')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-07.png" mode="widthFix"></image>
         <view class="name">领时长</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-08.png" mode="widthFix"></image>
         <view class="name">会员</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-09.png" mode="widthFix"></image>
         <view class="name">活动</view>
       </view>
-      <view class="menu-item">
+      <view class="menu-item" @click="skipPage('/pages/activity/daysTicket')">
         <image class="icon" src="/assets/image/explore/game-menu-icon-10.png" mode="widthFix"></image>
         <view class="name">免费流量</view>
       </view>
@@ -103,6 +97,13 @@
   // const switchScheduleType = (val : string) => {
   //   scheduleType.value = val
   // }
+  
+  // 跳转页面
+  const skipPage = (data: string) => {
+    uni.navigateTo({
+      url: data
+    })
+  }
 </script>
 
 <style lang="scss" scoped>

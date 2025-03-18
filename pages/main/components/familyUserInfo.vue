@@ -742,6 +742,7 @@
           padding: 5vw 3vw;
           background-color: #f5fafe;
           border-radius: 2vw;
+          margin-bottom: 2vw;
           .describe {
             width: 100%;
             .name {
@@ -787,7 +788,7 @@
         margin-bottom: 3vw;
       }
     }
-    .home-automation {
+    >.home-automation {
       width: 100%;
       box-sizing: border-box;
       padding: 3vw;

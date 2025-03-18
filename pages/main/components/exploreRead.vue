@@ -2,13 +2,7 @@
   <view class="main">
     <swiper class="ad-swiper" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)"
       indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
-      <swiper-item>
-        <image class="swiper-item-img" src="/assets/image/explore/read-ad.png" mode="widthFix"></image>
-      </swiper-item>
-      <swiper-item>
-        <image class="swiper-item-img" src="/assets/image/explore/read-ad.png" mode="widthFix"></image>
-      </swiper-item>
-      <swiper-item>
+      <swiper-item v-for="item in 5" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
         <image class="swiper-item-img" src="/assets/image/explore/read-ad.png" mode="widthFix"></image>
       </swiper-item>
     </swiper>
@@ -18,7 +12,7 @@
       <view class="titel">主编</view>
       <view class="subhead">精彩好书,不容错过</view>
       <view class="book-list">
-        <view class="book-item" v-for="item in 3" :key="item">
+        <view class="book-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/daysTicket')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/explore/book-cover.png" mode="widthFix"></image>
           </view>
@@ -32,7 +26,7 @@
       <view class="titel">影视原著</view>
       <view class="subhead">热播影视,畅看原著</view>
       <view class="book-list">
-        <view class="book-item" v-for="item in 3" :key="item">
+        <view class="book-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/supercardGuard')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/explore/book-cover.png" mode="widthFix"></image>
           </view>
@@ -46,7 +40,7 @@
       <view class="titel">成长知新</view>
       <view class="subhead">迎接外面世界的考研</view>
       <view class="book-list">
-        <view class="book-item" v-for="item in 3" :key="item">
+        <view class="book-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/explore/book-cover.png" mode="widthFix"></image>
           </view>
@@ -55,11 +49,6 @@
         </view>
       </view>
     </view>
-
-
-
-
-
   </view>
 </template>
 
@@ -76,6 +65,13 @@
   // const switchScheduleType = (val : string) => {
   //   scheduleType.value = val
   // }
+  
+    // 跳转页面
+    const skipPage = (data: string) => {
+      uni.navigateTo({
+        url: data
+      })
+    }
 </script>
 
 <style lang="scss" scoped>

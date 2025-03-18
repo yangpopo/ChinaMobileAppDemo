@@ -2,35 +2,35 @@
   <view class="explore-column-container">
     <scroll-view class="explore-column" :scroll-x="true" :scroll-y="false" :show-scrollbar="false" @scroll="scrollEvent">
       <view class="column-list" ref="columnList">
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/supercardGuard')">
           <image class="icon" src="/assets/image/home/explore-icon-01.png" mode="widthFix"></image>
           选号码
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
           <image class="icon" src="/assets/image/home/explore-icon-02.png" mode="widthFix"></image>
           看直播抽好礼
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
           <image class="icon" src="/assets/image/home/explore-icon-03.png" mode="widthFix"></image>
           装宽带
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/supercardGuard')">
           <image class="icon" src="/assets/image/home/explore-icon-03.png" mode="widthFix"></image>
           抽立减金
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
           <image class="icon" src="/assets/image/home/explore-icon-04.png" mode="widthFix"></image>
           0元福利
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
           <image class="icon" src="/assets/image/home/explore-icon-05.png" mode="widthFix"></image>
           咪咕视频会员
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/supercardGuard')">
           <image class="icon" src="/assets/image/home/explore-icon-06.png" mode="widthFix"></image>
           全球购
         </view>
-        <view class="column-item">
+        <view class="column-item"@click="skipPage('/pages/activity/getSecondaryCalliper')">
           <image class="icon" src="/assets/image/home/explore-icon-07.png" mode="widthFix"></image>
           积分兑爆品
         </view>
@@ -64,6 +64,13 @@
     // 获取高度
     let columnWidth = columnList.value.$el.offsetWidth / 2
     scrollSchedule.value = data.detail.scrollLeft / columnWidth
+  }
+  
+  // 跳转页面
+  const skipPage = (data: string) => {
+    uni.navigateTo({
+      url: data
+    })
   }
 </script>
 

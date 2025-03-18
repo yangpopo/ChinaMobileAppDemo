@@ -18,31 +18,31 @@
 
     <view class="main">
       <view class="column-box">
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/equities/equities-column-icon-01.png" mode="widthFix"></image>
           </view>
           <view class="title">黄金会员</view>
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/daysTicket')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/equities/equities-column-icon-02.png" mode="widthFix"></image>
           </view>
           <view class="title">1元享会员</view>
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/supercardGuard')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/equities/equities-column-icon-03.png" mode="widthFix"></image>
           </view>
           <view class="title">权益领取</view>
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/equities/equities-column-icon-04.png" mode="widthFix"></image>
           </view>
           <view class="title">我的权益</view>
         </view>
-        <view class="column-item">
+        <view class="column-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/equities/equities-column-icon-05.png" mode="widthFix"></image>
           </view>
@@ -102,7 +102,7 @@
             <view class="subhead">领权益福袋</view>
           </view>
           <view class="equities-list">
-            <view class="equities-item" v-for="item in 3" :key="item">
+            <view class="equities-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
               <view class="cover">
                 <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode=""></image>
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14943">
@@ -122,7 +122,7 @@
             <view class="subhead">领权益福袋</view>
           </view>
           <view class="equities-list">
-            <view class="equities-item" v-for="item in 3" :key="item">
+            <view class="equities-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
               <view class="cover">
                 <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode=""></image>
                 <!-- <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14943">
@@ -139,7 +139,7 @@
         
         <view class="more-equities hide" style="top: 72vw;" v-if="isShowMore">
           <view class="equities-list">
-            <view class="equities-item" v-for="item in 6" :key="item">
+            <view class="equities-item" v-for="item in 6" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
               <view class="cover">
                 <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode=""></image>
                 <!-- <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14943">
@@ -162,31 +162,31 @@
       <!-- 推荐促销 -->
       <view class="recommend-promotion">
         <swiper class="promotion-ad" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
-          <swiper-item v-for="item in 5" :key="item">
+          <swiper-item v-for="item in 5" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
             <image class="ad-item" src="/assets/image/home/government-enterprise-ad.png" mode="widthFix"></image>
           </swiper-item>
         </swiper>
         
         <view class="more-promotion">
-          <view class="promotion-item">
+          <view class="promotion-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
             <view class="cover">
               <image class="cover-img" src="/assets/image/equities/recommend-icon-01.png" mode="widthFix"></image>
             </view>
             <view class="title">黄金会员</view>
           </view>
-          <view class="promotion-item">
+          <view class="promotion-item" @click="skipPage('/pages/activity/daysTicket')">
             <view class="cover">
               <image class="cover-img" src="/assets/image/equities/recommend-icon-02.png" mode="widthFix"></image>
             </view>
             <view class="title">随心系</view>
           </view>
-          <view class="promotion-item">
+          <view class="promotion-item" @click="skipPage('/pages/activity/supercardGuard')">
             <view class="cover">
               <image class="cover-img" src="/assets/image/equities/recommend-icon-03.png" mode="widthFix"></image>
             </view>
             <view class="title">随心购</view>
           </view>
-          <view class="promotion-item">
+          <view class="promotion-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
             <view class="cover">
               <image class="cover-img" src="/assets/image/equities/recommend-icon-04.png" mode="widthFix"></image>
             </view>
@@ -195,10 +195,10 @@
         </view>
       </view>
       
-      <image class="promotion-group-ad" src="/assets/image/equities/promotion-ad.png" mode="widthFix"></image>
+      <image class="promotion-group-ad" @click="skipPage('/pages/activity/flow20gb-1yuan')" src="/assets/image/equities/promotion-ad.png" mode="widthFix"></image>
       
       <swiper class="slideshow-ad" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
-        <swiper-item v-for="item in 5" :key="item">
+        <swiper-item v-for="item in 5" :key="item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
           <image class="ad-item" src="/assets/image/equities/slideshow-ad.png" mode="widthFix"></image>
         </swiper-item>
       </swiper>
@@ -228,15 +228,15 @@
       
       <scroll-view class="hot-class-nav" :scroll-x="true" :show-scrollbar="false">
         <view class="class-nav-box">
-          <view class="class-nav-item" :class="{'selected': classNavSelected == 'faddish'}" @click="switchClassNav">爆款好物</view>
-          <view class="class-nav-item" :class="{'selected': classNavSelected == 'fineFood'}" @click="switchClassNav">美食特惠</view>
-          <view class="class-nav-item" :class="{'selected': classNavSelected == 'audition'}" @click="switchClassNav">试听专区</view>
-          <view class="class-nav-item" :class="{'selected': classNavSelected == 'lifeStyle'}" @click="switchClassNav">生活无忧</view>
+          <view class="class-nav-item" :class="{'selected': classNavSelected == 'faddish'}" @click="switchClassNav('faddish')">爆款好物</view>
+          <view class="class-nav-item" :class="{'selected': classNavSelected == 'fineFood'}" @click="switchClassNav('fineFood')">美食特惠</view>
+          <view class="class-nav-item" :class="{'selected': classNavSelected == 'audition'}" @click="switchClassNav('audition')">试听专区</view>
+          <view class="class-nav-item" :class="{'selected': classNavSelected == 'lifeStyle'}" @click="switchClassNav('lifeStyle')">生活无忧</view>
         </view>
       </scroll-view>
       
       <view class="member-privilege">
-        <view class="privilege-item" v-for="item in 10" :key="item">
+        <view class="privilege-item" v-for="item in 10" :key="item" @click="skipPage('/pages/activity/supercardGuard')">
           <view class="cover">
             <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode="widthFix"></image>
             <view class="tag">爆款</view>
@@ -284,6 +284,13 @@
     console.log('564564564')
     uni.navigateTo({
       url: '/pages/search/equitiesSearch'
+    })
+  }
+  
+  // 跳转页面
+  const skipPage = (data: string) => {
+    uni.navigateTo({
+      url: data
     })
   }
   

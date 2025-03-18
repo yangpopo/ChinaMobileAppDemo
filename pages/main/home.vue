@@ -136,6 +136,7 @@
         background-color: #fff;
 
         .nav-item {
+          box-sizing: border-box;
           color: #2d2d2f !important;
         }
       }
@@ -144,12 +145,13 @@
         position: relative;
         width: 100%;
         box-sizing: border-box;
-        padding: 2vw;
+        padding: 0vw 2vw 2vw 2vw;
 
         .nav-box {
           width: auto;
           display: flex;
           align-items: flex-end;
+          padding-top: 2vw;
 
           .nav-item {
             font-size: 3.5vw;
@@ -172,7 +174,7 @@
               position: absolute;
               font-size: 2vw;
               color: #fff;
-              top: 0vw;
+              top: -2vw;
               right: -2vw;
               background-color: #ff4d43;
               padding: 0.5vw 1.5vw;

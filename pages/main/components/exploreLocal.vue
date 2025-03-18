@@ -1,7 +1,7 @@
 <template>
   <view class="main">
     <view class="welfare-class">
-      <view class="welfare-item">
+      <view class="welfare-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="115988">
           <path
             d="M411.7248 838.1184a40.96 40.96 0 1 0 40.96 40.96 40.96 40.96 0 0 0-40.96-40.96zM716.3648 838.1184a40.96 40.96 0 1 0 40.96 40.96 40.96 40.96 0 0 0-40.96-40.96z"
@@ -18,7 +18,7 @@
         </svg>
         <view class="title">超市立减</view>
       </view>
-      <view class="welfare-item">
+      <view class="welfare-item" @click="skipPage('/pages/activity/daysTicket')">
         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="118878">
           <path d="M529.655172 900.413793h459.034483v88.275862H529.655172z" fill="#333333" p-id="118879"></path>
           <path
@@ -39,7 +39,7 @@
         </svg>
         <view class="title">影票</view>
       </view>
-      <view class="welfare-item">
+      <view class="welfare-item" @click="skipPage('/pages/activity/supercardGuard')">
         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="121875">
           <path
             d="M155.53 633.72c-6.34 0-12.75-1.67-18.57-5.19-17.02-10.28-22.49-32.4-12.22-49.42L376.5 162.06l20.16-0.23c12.61-0.1 24.15 6.18 30.87 16.85l0.07 0.12 187.35 299.95L692.75 376l10.95-14.37 18.13 0.16c11.29 0.12 22.01 5.61 28.69 14.71l146.93 199.89c11.78 16.02 8.33 38.55-7.69 50.33-16.02 11.78-38.55 8.33-50.33-7.69l-118.41-161.1-80.09 105.77-11.38 15.17-19.08-0.83a36.022 36.022 0 0 1-28.96-16.93L397.52 266.54 186.38 616.31c-6.76 11.2-18.66 17.4-30.85 17.4z"
@@ -56,7 +56,7 @@
         </svg>
         <view class="title">景点门票</view>
       </view>
-      <view class="welfare-item">
+      <view class="welfare-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="123314">
           <path
             d="M559.9744 885.504h-261.12c-36.7616 0-66.5088-29.7984-66.5088-66.5088V304.7936c0-36.7616 29.7984-66.5088 66.5088-66.5088h261.12c36.7616 0 66.5088 29.7984 66.5088 66.5088v514.2016c0.0512 36.7104-29.7472 66.5088-66.5088 66.5088z"
@@ -70,7 +70,7 @@
         </svg>
         <view class="title">加油服务</view>
       </view>
-      <view class="welfare-item">
+      <view class="welfare-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="133718">
           <path
             d="M476.74 884.267V505H446c-19.33 0-35-15.67-35-35s15.67-35 35-35h131.365c19.33 0 35 15.67 35 35s-15.67 35-35 35h-30.626v379.267h184.628c19.33 0 35 15.67 35 35s-15.67 35-35 35h-441.5c-19.33 0-35-15.67-35-35s15.67-35 35-35h186.872z m0.26-773.55V100c0-19.33 15.67-35 35-35s35 15.67 35 35v10.62c184.021 17.374 328 172.313 328 360.88 0 107.863-47.434 208.084-128.088 276.518-14.74 12.506-36.826 10.696-49.332-4.043-12.506-14.74-10.696-36.826 4.043-49.332C766.765 639.37 805 558.585 805 471.5 805 309.957 674.043 179 512.5 179S220 309.957 220 471.5c0 87.82 38.889 169.22 104.979 224.492 14.827 12.4 16.795 34.474 4.394 49.302-12.4 14.828-34.474 16.795-49.302 4.394C198.243 681.254 150 580.274 150 471.5c0-188.225 143.458-342.944 327-360.784z"
@@ -81,12 +81,12 @@
     </view>
 
     <view class="promotion-box">
-      <view class="promotion-item">
+      <view class="promotion-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
         <view class="title"><text class="em">助力</text>哪吒2</view>
         <view class="subhead">抢10元观影券</view>
         <image class="icon" src="/assets/image/home/service-icon-03.png" mode="widthFix"></image>
       </view>
-      <view class="promotion-item">
+      <view class="promotion-item" @click="skipPage('/pages/activity/daysTicket')">
         <view class="title">首月仅<text class="em">1</text>元</view>
         <view class="subhead">热门会员免费领</view>
         <image class="icon" src="/assets/image/home/set-meal-icon-02.png" mode="widthFix"></image>
@@ -175,6 +175,13 @@
   const scheduleType = ref('hotFilm') // 影片类型
   const switchScheduleType = (val : string) => {
     scheduleType.value = val
+  }
+  
+  // 跳转页面
+  const skipPage = (data: string) => {
+    uni.navigateTo({
+      url: data
+    })
   }
 </script>
 

@@ -59,11 +59,65 @@
       "style": {
         "navigationStyle": "custom"
       }
+    },
+    {
+      "path": "pages/signIn/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/activity/topUpReturnCash",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/queryPage/marginQuery",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/queryPage/remainingSumQuery",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/queryPage/pointsZone",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/activity/flow20gb-1yuan",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/activity/daysTicket",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/activity/supercardGuard",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/activity/getSecondaryCalliper",
+      "style": {
+        "navigationStyle": "custom"
+      }
     }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTitleText": "中国移动app模拟示范",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
