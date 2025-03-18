@@ -32,7 +32,7 @@
 
     <scroll-view :scroll-y="true" :show-scrollbar="false" class="scroll-main">
       <view class="main">
-        <image class="top-up-return-cash-ad" src="/assets/image/marginQuery/points-zone-ad.png" mode="widthFix"></image>
+        <image class="top-up-return-cash-ad" src="/assets/image/marginQuery/points-zone-ad.webp" mode="widthFix"></image>
       
       </view>
     </scroll-view>

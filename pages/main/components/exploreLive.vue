@@ -2,7 +2,7 @@
   <view class="main">
     <swiper class="cover-ad" :autoplay="true" :interval="4000" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
       <swiper-item v-for="item in 5" :key="item" @click="skipPage('/pages/activity/daysTicket')">
-        <image class="cover-ad-image" src="/assets/image/home/government-enterprise-ad.png" mode="widthFix"></image>
+        <image class="cover-ad-image" src="/assets/image/home/government-enterprise-ad.webp" mode="widthFix"></image>
       </swiper-item>
     </swiper>
     
@@ -11,18 +11,18 @@
     <view class="activity-list">
       <view class="activity-list-item">
         <view class="activity-item" @click="skipPage('/pages/activity/supercardGuard')">
-          <image class="item-ad" src="/assets/image/home/explore-live-ad-02.png" mode="widthFix"></image>
+          <image class="item-ad" src="/assets/image/home/explore-live-ad-02.webp" mode="widthFix"></image>
         </view>
         <view class="activity-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
-          <image class="item-ad" src="/assets/image/home/explore-live-ad-02.png" mode="widthFix"></image>
+          <image class="item-ad" src="/assets/image/home/explore-live-ad-02.webp" mode="widthFix"></image>
         </view>
       </view>
       <view class="activity-list-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
         <view class="activity-item">
-          <image class="item-ad" src="/assets/image/home/explore-live-ad-01.png" mode="widthFix"></image>
+          <image class="item-ad" src="/assets/image/home/explore-live-ad-01.webp" mode="widthFix"></image>
         </view>
         <view class="activity-item">
-          <image class="item-ad" src="/assets/image/home/explore-live-ad-02.png" mode="widthFix"></image>
+          <image class="item-ad" src="/assets/image/home/explore-live-ad-02.webp" mode="widthFix"></image>
         </view>
       </view>
     </view>

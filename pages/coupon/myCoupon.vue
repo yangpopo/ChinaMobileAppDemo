@@ -36,7 +36,7 @@
 
         <view class="choiceness-recommend-title">精选推荐</view>
 
-        <image v-for="item in 5" :key="item" class="coupon-ad" src="/assets/image/coupon/coupon-ad.png" mode="widthFix">
+        <image v-for="item in 5" :key="item" class="coupon-ad" src="/assets/image/coupon/coupon-ad.webp" mode="widthFix">
         </image>
 
         <view class="operate-more">

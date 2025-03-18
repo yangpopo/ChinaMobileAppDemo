@@ -17,7 +17,7 @@
           <view class="head">
             <view class="left">
               <view class="cover">
-                <image class="cover-img" src="/assets/image/coupon/ticket-type-icon-01.png" mode="widthFix"></image>
+                <image class="cover-img" src="/assets/image/coupon/ticket-type-icon-01.webp" mode="widthFix"></image>
               </view>
               <view class="name">8GB+黄金会员</view>
             </view>

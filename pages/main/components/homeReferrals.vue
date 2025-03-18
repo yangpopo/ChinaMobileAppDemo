@@ -40,7 +40,7 @@
         签到领奖
       </view>
     </view>
-    <image src="/assets/image/home/home-ad.png" class="home-ad" mode="widthFix" @click="skipPage('/pages/activity/topUpReturnCash')" />
+    <image src="/assets/image/home/home-ad.webp" class="home-ad" mode="widthFix" @click="skipPage('/pages/activity/topUpReturnCash')" />
     <view class="content">
       <view class="info-box">
         <view class="info-item" @click="skipPage('/pages/queryPage/marginQuery')">
@@ -97,7 +97,7 @@
           <view class="subhead">
             仅需1元起
           </view>
-          <image class="img-icon" src="/assets/image/home/001.png" mode="widthFix"></image>
+          <image class="img-icon" src="/assets/image/home/001.webp" mode="widthFix"></image>
         </view>
         <view class="hot-item" @click="skipPage('/pages/activity/daysTicket')">
           <view class="title">
@@ -106,7 +106,7 @@
           <view class="subhead">
             领国补神券
           </view>
-          <image class="img-icon" src="/assets/image/home/002.png" mode="widthFix"></image>
+          <image class="img-icon" src="/assets/image/home/002.webp" mode="widthFix"></image>
         </view>
         <view class="hot-item" @click="skipPage('/pages/activity/supercardGuard')">
           <view class="title">
@@ -115,7 +115,7 @@
           <view class="subhead">
             月月领1GB
           </view>
-          <image class="img-icon" src="/assets/image/home/003.png" mode="widthFix"></image>
+          <image class="img-icon" src="/assets/image/home/003.webp" mode="widthFix"></image>
         </view>
         <view class="hot-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
           <view class="title">
@@ -124,7 +124,7 @@
           <view class="subhead">
             共享主卡套餐
           </view>
-          <image class="img-icon" src="/assets/image/home/004.png" mode="widthFix"></image>
+          <image class="img-icon" src="/assets/image/home/004.webp" mode="widthFix"></image>
         </view>
       </view>
 
@@ -179,12 +179,12 @@
       <view class="more-activity-but">
         更多优惠>
       </view>
-      <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="main-activity" src="/assets/image/home/activity-ad-01.png" mode="widthFix"></image>
+      <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="main-activity" src="/assets/image/home/activity-ad-01.webp" mode="widthFix"></image>
       <view class="activity-box">
-        <image @click="skipPage('/pages/activity/daysTicket')" class="activity" src="/assets/image/home/activity-ad-02.png" mode="widthFix"></image>
-        <image @click="skipPage('/pages/activity/supercardGuard')" class="activity" src="/assets/image/home/activity-ad-03.png" mode="widthFix"></image>
-        <image @click="skipPage('/pages/activity/getSecondaryCalliper')" class="activity" src="/assets/image/home/activity-ad-04.png" mode="widthFix"></image>
-        <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="activity" src="/assets/image/home/activity-ad-05.png" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/daysTicket')" class="activity" src="/assets/image/home/activity-ad-02.webp" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/supercardGuard')" class="activity" src="/assets/image/home/activity-ad-03.webp" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/getSecondaryCalliper')" class="activity" src="/assets/image/home/activity-ad-04.webp" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="activity" src="/assets/image/home/activity-ad-05.webp" mode="widthFix"></image>
       </view>
     </view>
 
@@ -210,19 +210,19 @@
           slideShadows: false,
         }" :modules="modules">
           <z-swiper-item v-for="item in 8" :key="item">
-            <image class="flow-swiper-item" @click="skipPage('/pages/activity/flow20gb-1yuan')" src="/assets/image/home/activity-ad-02.png" mode="widthFix"></image>
+            <image class="flow-swiper-item" @click="skipPage('/pages/activity/flow20gb-1yuan')" src="/assets/image/home/activity-ad-02.webp" mode="widthFix"></image>
           </z-swiper-item>
         </z-swiper>
       </view>
       <view class="flow-ad-2">
-        <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="ad-item" src="/assets/image/home/flow-swiper-ab-01.png" mode="widthFix"></image>
-        <image @click="skipPage('/pages/activity/daysTicket')" class="ad-item" src="/assets/image/home/flow-swiper-ab-02.png" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="ad-item" src="/assets/image/home/flow-swiper-ab-01.webp" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/daysTicket')" class="ad-item" src="/assets/image/home/flow-swiper-ab-02.webp" mode="widthFix"></image>
       </view>
       <view class="flow-ad-3">
-        <image @click="skipPage('/pages/activity/supercardGuard')" class="ad-item" src="/assets/image/home/flow-swiper-ab-03.png" mode="widthFix"></image>
-        <image @click="skipPage('/pages/activity/getSecondaryCalliper')" class="ad-item" src="/assets/image/home/flow-swiper-ab-04.png" mode="widthFix"></image>
-        <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="ad-item" src="/assets/image/home/flow-swiper-ab-05.png" mode="widthFix"></image>
-        <image @click="skipPage('/pages/activity/daysTicket')" class="ad-item" src="/assets/image/home/flow-swiper-ab-06.png" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/supercardGuard')" class="ad-item" src="/assets/image/home/flow-swiper-ab-03.webp" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/getSecondaryCalliper')" class="ad-item" src="/assets/image/home/flow-swiper-ab-04.webp" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="ad-item" src="/assets/image/home/flow-swiper-ab-05.webp" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/daysTicket')" class="ad-item" src="/assets/image/home/flow-swiper-ab-06.webp" mode="widthFix"></image>
       </view>
     </view>
 
@@ -237,37 +237,37 @@
         </view>
       </view>
       <view class="benefit-ad-01">
-        <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="ad-item" src="/assets/image/home/benefit-01.png" mode="widthFix"></image>
-        <image @click="skipPage('/pages/activity/daysTicket')" class="ad-item" src="/assets/image/home/benefit-02.png" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/flow20gb-1yuan')" class="ad-item" src="/assets/image/home/benefit-01.webp" mode="widthFix"></image>
+        <image @click="skipPage('/pages/activity/daysTicket')" class="ad-item" src="/assets/image/home/benefit-02.webp" mode="widthFix"></image>
       </view>
       <view class="benefit-ad-02">
         <view class="ad-item" @click="skipPage('/pages/activity/supercardGuard')">
-          <image class="icon" src="/assets/image/home/benefit-icon-01.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/benefit-icon-01.webp" mode="widthFix"></image>
           <view class="title">1.9元返2元</view>
           <view class="explain">月月领1GB</view>
         </view>
         <view class="ad-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
-          <image class="icon" src="/assets/image/home/benefit-icon-02.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/benefit-icon-02.webp" mode="widthFix"></image>
           <view class="title">会员+10GB</view>
           <view class="explain">每月1元畅享</view>
         </view>
         <view class="ad-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
-          <image class="icon" src="/assets/image/home/benefit-icon-03.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/benefit-icon-03.webp" mode="widthFix"></image>
           <view class="title">爱奇艺+18GB</view>
           <view class="explain">四屏通用</view>
         </view>
         <view class="ad-item" @click="skipPage('/pages/activity/daysTicket')">
-          <image class="icon" src="/assets/image/home/benefit-icon-04.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/benefit-icon-04.webp" mode="widthFix"></image>
           <view class="title">美食权益+18GB</view>
           <view class="explain">50+美食任选</view>
         </view>
         <view class="ad-item" @click="skipPage('/pages/activity/supercardGuard')">
-          <image class="icon" src="/assets/image/home/benefit-icon-05.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/benefit-icon-05.webp" mode="widthFix"></image>
           <view class="title">25元家庭用电</view>
           <view class="explain">月月领8GB</view>
         </view>
         <view class="ad-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
-          <image class="icon" src="/assets/image/home/benefit-icon-06.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/benefit-icon-06.webp" mode="widthFix"></image>
           <view class="title">加油/充电券</view>
           <view class="explain">移动为你加油</view>
         </view>
@@ -287,14 +287,14 @@
       </view>
       <view class="set-meal-ad-01">
         <view class="set-meal-item">
-          <image class="icon" src="/assets/image/home/set-meal-icon-01.png" mode=""></image>
+          <image class="icon" src="/assets/image/home/set-meal-icon-01.webp" mode=""></image>
           <view class="explain">
             <view class="title">今日办流量翻倍</view>
             <view class="info">网龄长,翻倍高</view>
           </view>
         </view>
         <view class="set-meal-item">
-          <image class="icon" src="/assets/image/home/set-meal-icon-02.png" mode=""></image>
+          <image class="icon" src="/assets/image/home/set-meal-icon-02.webp" mode=""></image>
           <view class="explain">
             <view class="title">5G套餐7折</view>
             <view class="info">大流量+视频会员</view>
@@ -303,17 +303,17 @@
       </view>
       <view class="set-meal-ad-02">
         <view class="set-meal-item">
-          <image class="icon" src="/assets/image/home/set-meal-icon-03.png" mode=""></image>
+          <image class="icon" src="/assets/image/home/set-meal-icon-03.webp" mode=""></image>
           <view class="title">5G智享套餐</view>
           <view class="info">权益上新</view>
         </view>
         <view class="set-meal-item">
-          <image class="icon" src="/assets/image/home/set-meal-icon-04.png" mode=""></image>
+          <image class="icon" src="/assets/image/home/set-meal-icon-04.webp" mode=""></image>
           <view class="title">全家享套餐</view>
           <view class="info">直升全球通</view>
         </view>
         <view class="set-meal-item">
-          <image class="icon" src="/assets/image/home/set-meal-icon-05.png" mode=""></image>
+          <image class="icon" src="/assets/image/home/set-meal-icon-05.webp" mode=""></image>
           <view class="title">4G套餐</view>
           <view class="info">全球通超级家</view>
         </view>
@@ -570,7 +570,7 @@
 
     .hot-activity {
       width: 100%;
-      background-image: url('/assets/image/home/hot-activity-title.png');
+      background-image: url('/assets/image/home/hot-activity-title.webp');
       background-size: 100% auto;
       background-repeat: no-repeat;
       box-sizing: border-box;

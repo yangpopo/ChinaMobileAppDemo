@@ -156,7 +156,7 @@
       </view>
     </view>
 
-    <image class="voucher-center-ad" src="/assets/image/voucherCenter/voucherCenter-ad.png" mode="widthFix"></image>
+    <image class="voucher-center-ad" src="/assets/image/voucherCenter/voucherCenter-ad.webp" mode="widthFix"></image>
 
     <view class="remaining-sum-state">
       <view class="sum-item">话费余额:
@@ -202,23 +202,23 @@
 
     <view class="more-channel">
       <view class="channel-item">
-        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-01.png" mode=""></image>
+        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-01.webp" mode=""></image>
         <view class="title">固化充值</view>
       </view>
       <view class="channel-item">
-        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-02.png" mode=""></image>
+        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-02.webp" mode=""></image>
         <view class="title">物联网</view>
       </view>
       <view class="channel-item">
-        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-03.png" mode=""></image>
+        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-03.webp" mode=""></image>
         <view class="title">家庭副卡</view>
       </view>
       <view class="channel-item">
-        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-04.png" mode=""></image>
+        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-04.webp" mode=""></image>
         <view class="title">宽带充值</view>
       </view>
       <view class="channel-item">
-        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-05.png" mode=""></image>
+        <image class="channel-icon" src="/assets/image/voucherCenter/channel-icon-05.webp" mode=""></image>
         <view class="title">政企充值</view>
       </view>
     </view>

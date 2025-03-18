@@ -8,9 +8,9 @@
       <view class="left">
         <view class="cover">
           <image class="cover-img" v-if="discountCouponData.type == 1"
-            src="/assets/image/coupon/ticket-type-icon-01.png" mode="widthFix"></image>
+            src="/assets/image/coupon/ticket-type-icon-01.webp" mode="widthFix"></image>
           <image class="cover-img" v-else-if="discountCouponData.type == 2"
-            src="/assets/image/coupon/ticket-type-icon-02.png" mode="widthFix"></image>
+            src="/assets/image/coupon/ticket-type-icon-02.webp" mode="widthFix"></image>
         </view>
         <view class="info">
           <view class="title">{{ discountCouponData.title }}</view>
@@ -37,7 +37,7 @@
   
   const discountCouponData = reactive({
     type: 1,
-    cover: '/assets/image/coupon/ticket-type-icon-01.png',
+    cover: '/assets/image/coupon/ticket-type-icon-01.webp',
     title: '8GB周包+黄金会员',
     subhead: '2025.03.17 23:59',
     remark: {

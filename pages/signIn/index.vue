@@ -32,7 +32,7 @@
 
     <scroll-view :scroll-y="true" :show-scrollbar="false" class="scroll-main">
       <view class="main">
-        <image class="sign-in-ab" src="/assets/image/signIn/sign-in-ab.png" mode="widthFix"></image>
+        <image class="sign-in-ab" src="/assets/image/signIn/sign-in-ab.webp" mode="widthFix"></image>
        
       </view>
     </scroll-view>

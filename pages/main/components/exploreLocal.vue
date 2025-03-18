@@ -84,12 +84,12 @@
       <view class="promotion-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
         <view class="title"><text class="em">助力</text>哪吒2</view>
         <view class="subhead">抢10元观影券</view>
-        <image class="icon" src="/assets/image/home/service-icon-03.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/service-icon-03.webp" mode="widthFix"></image>
       </view>
       <view class="promotion-item" @click="skipPage('/pages/activity/daysTicket')">
         <view class="title">首月仅<text class="em">1</text>元</view>
         <view class="subhead">热门会员免费领</view>
-        <image class="icon" src="/assets/image/home/set-meal-icon-02.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/set-meal-icon-02.webp" mode="widthFix"></image>
       </view>
     </view>
 
@@ -102,7 +102,7 @@
     <!-- 周边美食 -->
     <template v-if="menuClass == 'fineFood'">
       <view class="food-item" v-for="item in 15" :key="item">
-        <image class="logo" src="/assets/image/home/brand-ai.png" mode="widthFix"></image>
+        <image class="logo" src="/assets/image/home/brand-ai.webp" mode="widthFix"></image>
         <view class="food-info">
           <view class="title">
             喜茶(北京王府井喜悦购物中心)
@@ -146,7 +146,7 @@
           <view class="schedule-item" :class="{'selected': scheduleType == 'awaitFilm'}" @click="switchScheduleType('awaitFilm')">即将上映</view>
         </view>
         <view class="film-item" v-for="item in 15" :key="item">
-          <image class="film-cover" src="/assets/image/home/film-cover.png" mode="widthFix"></image>
+          <image class="film-cover" src="/assets/image/home/film-cover.webp" mode="widthFix"></image>
           <view class="film-info">
             <view class="title">哪吒之魔童闹海</view>
             <view class="score">评分:<text class="val">8.6</text></view>

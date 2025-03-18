@@ -4,11 +4,11 @@
     <view class="main-bg"></view>
     <!-- 家庭--封面 -->
     <view class="family-cover-box">
-      <image class="family-cover" src="/assets/image/home/family-cover.png" mode="widthFix"></image>
+      <image class="family-cover" src="/assets/image/home/family-cover.webp" mode="widthFix"></image>
       <view class="user-phone">158****1234</view>
       <view class="subscribe-tga">预约信息查询</view>
     </view>
-    <image class="family-networking-ad" src="/assets/image/home/family-networking.png" mode="widthFix"></image>
+    <image class="family-networking-ad" src="/assets/image/home/family-networking.webp" mode="widthFix"></image>
     <familyUserInfo />
     
   </view>

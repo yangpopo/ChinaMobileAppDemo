@@ -8,7 +8,7 @@
         <view class="more">更多></view>
       </view>
       <view class="service-hall-info">
-        <image class="service-hall-cover" src="/assets/image/home/service-hall-cover.png" mode="widthFix"></image>
+        <image class="service-hall-cover" src="/assets/image/home/service-hall-cover.webp" mode="widthFix"></image>
         <view class="info-data">
           <view class="address">重庆市北碚区中山路139号</view>
           <view class="time">营业时间:08:30-19:00</view>
@@ -45,23 +45,23 @@
 
     <view class="service-box">
       <view class="service-item">
-        <image class="icon" src="/assets/image/home/service-icon-01.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/service-icon-01.webp" mode="widthFix"></image>
         <view class="name">天天神券</view>
       </view>
       <view class="service-item">
-        <image class="icon" src="/assets/image/home/service-icon-02.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/service-icon-02.webp" mode="widthFix"></image>
         <view class="name">积分兑换</view>
       </view>
       <view class="service-item">
-        <image class="icon" src="/assets/image/home/service-icon-03.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/service-icon-03.webp" mode="widthFix"></image>
         <view class="name">装宽带</view>
       </view>
       <view class="service-item">
-        <image class="icon" src="/assets/image/home/service-icon-04.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/service-icon-04.webp" mode="widthFix"></image>
         <view class="name">微信客服</view>
       </view>
       <view class="service-item">
-        <image class="icon" src="/assets/image/home/service-icon-05.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/service-icon-05.webp" mode="widthFix"></image>
         <view class="name">查网龄</view>
       </view>
     </view>
@@ -71,16 +71,16 @@
       <view class="left-box">
         <view class="title">20GB爆款任你选</view>
         <view class="subhead">仅需1元畅享优惠</view>
-        <image class="icon" src="/assets/image/home/hot-recommend-icon-01.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/hot-recommend-icon-01.webp" mode="widthFix"></image>
       </view>
       <view class="right-box">
         <view class="hot-recommend-item">
           <view class="title">月月领3元话费券+1GB</view>
-          <image class="icon" src="/assets/image/home/hot-recommend-icon-02.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/hot-recommend-icon-02.webp" mode="widthFix"></image>
         </view>
         <view class="hot-recommend-item">
           <view class="title">7元10GB<text>浏览拼着买</text></view>
-          <image class="icon" src="/assets/image/home/hot-recommend-icon-03.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/hot-recommend-icon-03.webp" mode="widthFix"></image>
         </view>
       </view>
     </view>
@@ -91,19 +91,19 @@
     </view>
     <view class="hot-phone-list">
       <view class="hot-phone-item">
-        <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+        <image class="cover" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
         <view class="title">iPhone</view>
         <view class="subhead">移动正品保障</view>
         <view class="price">¥5454起</view>
       </view>
       <view class="hot-phone-item">
-        <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+        <image class="cover" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
         <view class="title">iPhone</view>
         <view class="subhead">荣耀专区</view>
         <view class="price">¥5454起</view>
       </view>
       <view class="hot-phone-item">
-        <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+        <image class="cover" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
         <view class="title">iPhone</view>
         <view class="subhead">OPPO专区</view>
         <view class="price">¥5454起</view>

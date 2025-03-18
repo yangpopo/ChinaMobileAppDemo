@@ -56,7 +56,7 @@
       </template>
       <!-- 爱家亲情圈 -->
       <template v-if="menuType == 'familyCircle'">
-        <image class="family-circle-ad" src="/assets/image/home/family-circle.png" mode="widthFix"></image>
+        <image class="family-circle-ad" src="/assets/image/home/family-circle.webp" mode="widthFix"></image>
       </template>
       
     </view>
@@ -66,23 +66,23 @@
       <view class="title">家庭服务</view>
       <view class="domestic-service-box">
         <view class="domestic-service-item">
-          <image class="icon" src="/assets/image/home/domestic-service-icon-01.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/domestic-service-icon-01.webp" mode="widthFix"></image>
           <view class="name">智修精灵</view>
         </view>
         <view class="domestic-service-item">
-          <image class="icon" src="/assets/image/home/domestic-service-icon-02.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/domestic-service-icon-02.webp" mode="widthFix"></image>
           <view class="name">宽带领好礼</view>
         </view>
         <view class="domestic-service-item">
-          <image class="icon" src="/assets/image/home/domestic-service-icon-03.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/domestic-service-icon-03.webp" mode="widthFix"></image>
           <view class="name">宽带提速</view>
         </view>
         <view class="domestic-service-item">
-          <image class="icon" src="/assets/image/home/domestic-service-icon-04.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/domestic-service-icon-04.webp" mode="widthFix"></image>
           <view class="name">爱家光网</view>
         </view>
         <view class="domestic-service-item">
-          <image class="icon" src="/assets/image/home/domestic-service-icon-05.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/home/domestic-service-icon-05.webp" mode="widthFix"></image>
           <view class="name">更多服务</view>
         </view>
       </view>
@@ -90,7 +90,7 @@
     <!-- 工程师 -->
     <view class="engineer-info" v-if="menuType == 'broadBand'">
       <view class="head-portrait">
-        <image class="image" src="/assets/image/home/head-portrait.png" mode="widthFix"></image>
+        <image class="image" src="/assets/image/home/head-portrait.webp" mode="widthFix"></image>
         <view class="name">我的智能工程师</view>
       </view>
       <view class="info">
@@ -227,14 +227,14 @@
       
       <!-- 本地精选 -->
       <view class="local-selection">本地精选</view>
-      <image class="local-selection-ad" src="/assets/image/home/local-selection-ad.png" mode="widthFix"></image>
+      <image class="local-selection-ad" src="/assets/image/home/local-selection-ad.webp" mode="widthFix"></image>
     </template>
     
     <!-- 家庭服务 -->
     <template v-else-if="serveMenuType === 'watchTelevision'">
       <view class="watch-television">
-        <image class="watch-television-ad-01" src="/assets/image/home/watch-television-01.png" mode="widthFix"></image>
-        <image class="watch-television-ad-02" src="/assets/image/home/watch-television-02.png" mode="widthFix"></image>
+        <image class="watch-television-ad-01" src="/assets/image/home/watch-television-01.webp" mode="widthFix"></image>
+        <image class="watch-television-ad-02" src="/assets/image/home/watch-television-02.webp" mode="widthFix"></image>
       </view>
     </template>
     
@@ -244,7 +244,7 @@
         <view class="title">
           家庭福利
         </view>
-        <image class="home-automation" src="/assets/image/home/home-automation.png" mode="widthFix"></image>
+        <image class="home-automation" src="/assets/image/home/home-automation.webp" mode="widthFix"></image>
         
       </view>
     </template>

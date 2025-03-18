@@ -5,13 +5,13 @@
     <swiper class="cover-ad" :autoplay="true" :indicator-dots="true" :interval="3000"
       indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
       <swiper-item>
-        <image class="cover-item" src="/assets/image/home/government-enterprise-ad.png" mode="widthFix"></image>
+        <image class="cover-item" src="/assets/image/home/government-enterprise-ad.webp" mode="widthFix"></image>
       </swiper-item>
       <swiper-item>
-        <image class="cover-item" src="/assets/image/home/government-enterprise-ad.png" mode="widthFix"></image>
+        <image class="cover-item" src="/assets/image/home/government-enterprise-ad.webp" mode="widthFix"></image>
       </swiper-item>
       <swiper-item>
-        <image class="cover-item" src="/assets/image/home/government-enterprise-ad.png" mode="widthFix"></image>
+        <image class="cover-item" src="/assets/image/home/government-enterprise-ad.webp" mode="widthFix"></image>
       </swiper-item>
     </swiper>
 
@@ -156,7 +156,7 @@
       <view class="product-list">
         <view class="product-item" v-for="item in 10" :key="item">
           <view class="cover">
-            <image class="cover-image" src="/assets/image/home/family-cover.png" mode="widthFix"></image>
+            <image class="cover-image" src="/assets/image/home/family-cover.webp" mode="widthFix"></image>
           </view>
           <view class="title">千里眼智能摄像头C31</view>
         </view>

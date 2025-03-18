@@ -60,7 +60,7 @@
       <view class="user">
         <view class="user-info">
           <view class="head-portrait">
-            <image class="img" src="/assets/image/home/head-portrait.png" mode="widthFix"></image>
+            <image class="img" src="/assets/image/home/head-portrait.webp" mode="widthFix"></image>
           </view>
           <view class="info">
             <view class="name">158****1234
@@ -77,8 +77,8 @@
         </view>
 
         <view class="more-welfare">
-          <image class="welfare-item" src="/assets/image/my/tag-icon-01.png" mode="widthFix"></image>
-          <image class="welfare-item" src="/assets/image/my/tag-icon-02.png" mode="widthFix"></image>
+          <image class="welfare-item" src="/assets/image/my/tag-icon-01.webp" mode="widthFix"></image>
+          <image class="welfare-item" src="/assets/image/my/tag-icon-02.webp" mode="widthFix"></image>
         </view>
 
       </view>
@@ -101,7 +101,7 @@
         </view>
       </view>
 
-      <image class="ad-my-equities" src="/assets/image/my/ad-my-equities.png" mode="widthFix"></image>
+      <image class="ad-my-equities" src="/assets/image/my/ad-my-equities.webp" mode="widthFix"></image>
 
       <view class="module">
         <view class="head">
@@ -249,22 +249,22 @@
       <view class="module">
         <view class="item-list">
           <view class="item" style="margin-bottom: 0;">
-            <image class="icon" src="/assets/image/my/fast-track-icon-01.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/my/fast-track-icon-01.webp" mode="widthFix"></image>
             <view class="title">流量1元起</view>
             <!-- <view class="new-info">1</view> -->
           </view>
           <view class="item" style="margin-bottom: 0;">
-            <image class="icon" src="/assets/image/my/fast-track-icon-02.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/my/fast-track-icon-02.webp" mode="widthFix"></image>
             <view class="title">龄3元话费</view>
             <!-- <view class="new-info">1</view> -->
           </view>
           <view class="item" style="margin-bottom: 0;">
-            <image class="icon" src="/assets/image/my/fast-track-icon-03.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/my/fast-track-icon-03.webp" mode="widthFix"></image>
             <view class="title">首月1元</view>
             <!-- <view class="new-info">1</view> -->
           </view>
           <view class="item" style="margin-bottom: 0;">
-            <image class="icon" src="/assets/image/my/fast-track-icon-04.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/my/fast-track-icon-04.webp" mode="widthFix"></image>
             <view class="title">任你选系列</view>
             <!-- <view class="new-info">1</view> -->
           </view>
@@ -386,7 +386,7 @@
         </view>
       </view>
 
-      <image class="ai-ad" src="/assets/image/my/ai-ad.png" mode="widthFix"></image>
+      <image class="ai-ad" src="/assets/image/my/ai-ad.webp" mode="widthFix"></image>
 
       <view class="module">
         <view class="head">

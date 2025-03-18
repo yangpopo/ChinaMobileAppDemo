@@ -1,6 +1,6 @@
 <template>
   <view class="main">
-   <image class="apple-icon-abnormal" src="/assets/image/livingPayment/apple-icon-abnormal.png" mode="widthFix"></image>
+   <image class="apple-icon-abnormal" src="/assets/image/livingPayment/apple-icon-abnormal.webp" mode="widthFix"></image>
    <view class="info">
      抱歉,超级手机卡公交功能仅安卓支持NFC机型使用<br />苹果用户暂无法使用
    </view>

@@ -32,7 +32,7 @@
 
     <scroll-view :scroll-y="true" :show-scrollbar="false" class="scroll-main">
       <view class="main">
-        <image class="bill-home-ad" src="/assets/image/bill/bill-home-ad.png" mode="widthFix"></image>
+        <image class="bill-home-ad" src="/assets/image/bill/bill-home-ad.webp" mode="widthFix"></image>
         <view class="user-box">
           <view class="left">
             <view class="user">
@@ -103,9 +103,9 @@
           </view>
 
           <view class="hot-activity">
-            <image class="activity-icon" src="/assets/image/bill/bill-home-icno-01.png" mode="widthFix"></image>
-            <image class="activity-icon" src="/assets/image/bill/bill-home-icno-02.png" mode="widthFix"></image>
-            <image class="activity-icon" src="/assets/image/bill/bill-home-icno-03.png" mode="widthFix"></image>
+            <image class="activity-icon" src="/assets/image/bill/bill-home-icno-01.webp" mode="widthFix"></image>
+            <image class="activity-icon" src="/assets/image/bill/bill-home-icno-02.webp" mode="widthFix"></image>
+            <image class="activity-icon" src="/assets/image/bill/bill-home-icno-03.webp" mode="widthFix"></image>
           </view>
 
           <view class="billing-details">

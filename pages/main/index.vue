@@ -57,7 +57,7 @@
         <text class="title" :class="{'selected' : current == 1}">探索</text>
       </view>
       <view class="nav-ai-item">
-        <image class="ai-head-portrait" src="/static/image/ai-head-portrait.png"></image>
+        <image class="ai-head-portrait" src="/static/image/ai-head-portrait.webp"></image>
       </view>
       <view class="nav-item" @click="swiperNav(2)">
         <svg class="icon" v-if="current !== 2" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"

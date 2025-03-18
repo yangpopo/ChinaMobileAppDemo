@@ -42,32 +42,32 @@
 				// TODO 替换为自己的图标
 				bottomData: [{
 						text: '微信',
-						icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png',
+						icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.webp',
 						name: 'wx'
 					},
 					{
 						text: '支付宝',
-						icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png',
+						icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.webp',
 						name: 'ali'
 					},
 					{
 						text: 'QQ',
-						icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png',
+						icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.webp',
 						name: 'qq'
 					},
 					{
 						text: '新浪',
-						icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png',
+						icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.webp',
 						name: 'sina'
 					},
 					// {
 					// 	text: '百度',
-					// 	icon: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/1ec6e920-50bf-11eb-8a36-ebb87efcf8c0.png',
+					// 	icon: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/1ec6e920-50bf-11eb-8a36-ebb87efcf8c0.webp',
 					// 	name: 'copy'
 					// },
 					// {
 					// 	text: '其他',
-					// 	icon: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/2e0fdfe0-50bf-11eb-b997-9918a5dda011.png',
+					// 	icon: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-dc-site/2e0fdfe0-50bf-11eb-b997-9918a5dda011.webp',
 					// 	name: 'more'
 					// }
 				]

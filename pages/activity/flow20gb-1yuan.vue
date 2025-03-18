@@ -32,7 +32,7 @@
 
     <scroll-view :scroll-y="true" :show-scrollbar="false" class="scroll-main">
       <view class="main">
-        <image class="flow20gb-1yuan" src="/assets/image/activity/20gb-1yuan.png" mode="widthFix"></image>
+        <image class="flow20gb-1yuan" src="/assets/image/activity/20gb-1yuan.webp" mode="widthFix"></image>
       
       </view>
     </scroll-view>

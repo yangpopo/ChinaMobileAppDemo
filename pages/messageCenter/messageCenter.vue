@@ -48,7 +48,7 @@
       <view class="general-info-list">
         <view class="info-item" v-for="item in 5" :key="item">
           <view class="head-portrait">
-            <image class="img" src="/static/image/ai-head-portrait.png" mode="widthFix"></image>
+            <image class="img" src="/static/image/ai-head-portrait.webp" mode="widthFix"></image>
             <view class="new-info"></view>
           </view>
           <view class="content">
@@ -63,7 +63,7 @@
       <view class="promotion-info-list">
         <view class="info-item" v-for="item in 5" :key="item">
           <view class="head-portrait">
-            <image class="img" src="/assets/image/messageCenter/info-icon.png" mode="widthFix"></image>
+            <image class="img" src="/assets/image/messageCenter/info-icon.webp" mode="widthFix"></image>
             <view class="new-info"></view>
           </view>
           <view class="content">

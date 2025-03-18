@@ -15,7 +15,7 @@
       <swiper class="service-ad" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)"
         indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
         <swiper-item v-for="item in 2" :key="item">
-          <image class="service-ad-img" src="/assets/image/service/service-ad.png" mode="widthFix"></image>
+          <image class="service-ad-img" src="/assets/image/service/service-ad.webp" mode="widthFix"></image>
         </swiper-item>
       </swiper>
 
@@ -24,35 +24,35 @@
         <view class="title">特色服务</view>
         <view class="serve-list">
           <view class="serve-item">
-            <image class="icon" src="/assets/image/service/serve-icon-01.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/service/serve-icon-01.webp" mode="widthFix"></image>
             <view class="name">我的投诉</view>
           </view>
           <view class="serve-item">
-            <image class="icon" src="/assets/image/service/serve-icon-02.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/service/serve-icon-02.webp" mode="widthFix"></image>
             <view class="name">我的订单</view>
           </view>
           <view class="serve-item">
-            <image class="icon" src="/assets/image/service/serve-icon-03.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/service/serve-icon-03.webp" mode="widthFix"></image>
             <view class="name">我的套餐</view>
           </view>
           <view class="serve-item">
-            <image class="icon" src="/assets/image/service/serve-icon-04.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/service/serve-icon-04.webp" mode="widthFix"></image>
             <view class="name">余量查询</view>
           </view>
           <view class="serve-item">
-            <image class="icon" src="/assets/image/service/serve-icon-05.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/service/serve-icon-05.webp" mode="widthFix"></image>
             <view class="name">积分查询</view>
           </view>
           <view class="serve-item">
-            <image class="icon" src="/assets/image/service/serve-icon-06.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/service/serve-icon-06.webp" mode="widthFix"></image>
             <view class="name">我的账单</view>
           </view>
           <view class="serve-item">
-            <image class="icon" src="/assets/image/service/serve-icon-07.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/service/serve-icon-07.webp" mode="widthFix"></image>
             <view class="name">在售资费</view>
           </view>
           <view class="serve-item">
-            <image class="icon" src="/assets/image/service/serve-icon-08.png" mode="widthFix"></image>
+            <image class="icon" src="/assets/image/service/serve-icon-08.webp" mode="widthFix"></image>
             <view class="name">话费充值</view>
           </view>
         </view>

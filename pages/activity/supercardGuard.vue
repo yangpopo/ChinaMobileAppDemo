@@ -32,7 +32,7 @@
 
     <scroll-view :scroll-y="true" :show-scrollbar="false" class="scroll-main">
       <view class="main">
-        <image class="flow20gb-1yuan" src="/assets/image/activity/supercard-guard-ad.png" mode="widthFix"></image>
+        <image class="flow20gb-1yuan" src="/assets/image/activity/supercard-guard-ad.webp" mode="widthFix"></image>
       
       </view>
     </scroll-view>

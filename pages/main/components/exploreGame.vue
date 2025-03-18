@@ -3,60 +3,60 @@
     <swiper class="ad-swiper" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)"
       indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
       <swiper-item v-for="item in 10" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
-        <image class="swiper-item-img" src="/assets/image/home/mobile-phone-ad.png" mode="widthFix"></image>
+        <image class="swiper-item-img" src="/assets/image/home/mobile-phone-ad.webp" mode="widthFix"></image>
       </swiper-item>
     </swiper>
 
     <view class="menu-list">
       <view class="menu-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-01.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-01.webp" mode="widthFix"></image>
         <view class="name">网易</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/daysTicket')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-02.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-02.webp" mode="widthFix"></image>
         <view class="name">咪咕掼蛋</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/supercardGuard')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-03.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-03.webp" mode="widthFix"></image>
         <view class="name">益智健康</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-04.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-04.webp" mode="widthFix"></image>
         <view class="name">视频</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/flow20gb-1yuan')" >
-        <image class="icon" src="/assets/image/explore/game-menu-icon-05.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-05.webp" mode="widthFix"></image>
         <view class="name">全部游戏</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/daysTicket')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-06.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-06.webp" mode="widthFix"></image>
         <view class="name">聚宝盆</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/supercardGuard')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-07.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-07.webp" mode="widthFix"></image>
         <view class="name">领时长</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-08.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-08.webp" mode="widthFix"></image>
         <view class="name">会员</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-09.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-09.webp" mode="widthFix"></image>
         <view class="name">活动</view>
       </view>
       <view class="menu-item" @click="skipPage('/pages/activity/daysTicket')">
-        <image class="icon" src="/assets/image/explore/game-menu-icon-10.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/game-menu-icon-10.webp" mode="widthFix"></image>
         <view class="name">免费流量</view>
       </view>
     </view>
 
     <view class="column-title">精选游戏</view>
-    <image class="choiceness-game-ad" src="/assets/image/explore/game-ad.png" mode="widthFix"></image>
+    <image class="choiceness-game-ad" src="/assets/image/explore/game-ad.webp" mode="widthFix"></image>
     <scroll-view class="choiceness-game-list" :scroll-x="true" :show-scrollbar="false">
       <view class="choiceness-game-box">
         <view class="choiceness-game-item" v-for="item in 10" :key="item">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/home/head-portrait.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/home/head-portrait.webp" mode="widthFix"></image>
           </view>
           <view class="title">方块萌消</view>
           <view class="hot-tag">休闲益智•闯关•可爱</view>
@@ -64,7 +64,7 @@
       </view>
     </scroll-view>
 
-    <image class="leading-ad" src="/assets/image/explore/leading-ad.png" mode="widthFix"></image>
+    <image class="leading-ad" src="/assets/image/explore/leading-ad.webp" mode="widthFix"></image>
 
     <view class="column-title">
       <view class="title">棋牌逗乐</view>
@@ -74,7 +74,7 @@
     <scroll-view class="game-list" :scroll-x="true" :show-scrollbar="false">
       <view class="game-list-box">
         <view class="game-item" v-for="item in 10" :key="item">
-          <image class="cover" src="/assets/image/explore/game-menu-icon-07.png" mode="widthFix"></image>
+          <image class="cover" src="/assets/image/explore/game-menu-icon-07.webp" mode="widthFix"></image>
           <view class="title">同城斗地主</view>
           <view class="start-game">秒玩</view>
         </view>

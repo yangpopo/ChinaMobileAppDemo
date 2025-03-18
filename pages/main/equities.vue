@@ -20,31 +20,31 @@
       <view class="column-box">
         <view class="column-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/equities/equities-column-icon-01.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/equities/equities-column-icon-01.webp" mode="widthFix"></image>
           </view>
           <view class="title">黄金会员</view>
         </view>
         <view class="column-item" @click="skipPage('/pages/activity/daysTicket')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/equities/equities-column-icon-02.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/equities/equities-column-icon-02.webp" mode="widthFix"></image>
           </view>
           <view class="title">1元享会员</view>
         </view>
         <view class="column-item" @click="skipPage('/pages/activity/supercardGuard')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/equities/equities-column-icon-03.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/equities/equities-column-icon-03.webp" mode="widthFix"></image>
           </view>
           <view class="title">权益领取</view>
         </view>
         <view class="column-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/equities/equities-column-icon-04.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/equities/equities-column-icon-04.webp" mode="widthFix"></image>
           </view>
           <view class="title">我的权益</view>
         </view>
         <view class="column-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/equities/equities-column-icon-05.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/equities/equities-column-icon-05.webp" mode="widthFix"></image>
           </view>
           <view class="title">超市订单</view>
         </view>
@@ -104,7 +104,7 @@
           <view class="equities-list">
             <view class="equities-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
               <view class="cover">
-                <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode=""></image>
+                <image class="cover-img" src="/assets/image/equities/kugou-logo.webp" mode=""></image>
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14943">
                   <path
                     d="M713.04314 394.841279l-33.486639 0 0-67.070491c0-93.874947-73.742441-167.623528-167.620458-167.623528-93.777733 0-167.572362 73.748581-167.572362 167.623528l0 67.070491-33.533711 0c-36.82466 0-67.019326 30.147594-67.019326 66.965091l0 335.251148c0 36.817497 30.194666 66.965091 67.019326 66.965091l402.212146 0c36.922897 0 67.069468-30.147594 67.069468-66.965091L780.111584 461.806369C780.113631 424.989896 749.966037 394.841279 713.04314 394.841279M511.937067 696.500388c-36.820567 0-67.019326-30.194666-67.019326-67.067421 0-36.875825 30.198759-67.070491 67.019326-67.070491 36.920851 0 67.070491 30.194666 67.070491 67.070491C579.007558 666.306746 548.857917 696.500388 511.937067 696.500388M615.877243 394.841279l-207.830211 0 0-67.070491c0-57.006285 46.933892-103.892081 103.889011-103.892081 57.053357 0 103.9412 46.885797 103.9412 103.892081L615.877243 394.841279z"
@@ -124,7 +124,7 @@
           <view class="equities-list">
             <view class="equities-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
               <view class="cover">
-                <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode=""></image>
+                <image class="cover-img" src="/assets/image/equities/kugou-logo.webp" mode=""></image>
                 <!-- <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14943">
                   <path
                     d="M713.04314 394.841279l-33.486639 0 0-67.070491c0-93.874947-73.742441-167.623528-167.620458-167.623528-93.777733 0-167.572362 73.748581-167.572362 167.623528l0 67.070491-33.533711 0c-36.82466 0-67.019326 30.147594-67.019326 66.965091l0 335.251148c0 36.817497 30.194666 66.965091 67.019326 66.965091l402.212146 0c36.922897 0 67.069468-30.147594 67.069468-66.965091L780.111584 461.806369C780.113631 424.989896 749.966037 394.841279 713.04314 394.841279M511.937067 696.500388c-36.820567 0-67.019326-30.194666-67.019326-67.067421 0-36.875825 30.198759-67.070491 67.019326-67.070491 36.920851 0 67.070491 30.194666 67.070491 67.070491C579.007558 666.306746 548.857917 696.500388 511.937067 696.500388M615.877243 394.841279l-207.830211 0 0-67.070491c0-57.006285 46.933892-103.892081 103.889011-103.892081 57.053357 0 103.9412 46.885797 103.9412 103.892081L615.877243 394.841279z"
@@ -141,7 +141,7 @@
           <view class="equities-list">
             <view class="equities-item" v-for="item in 6" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
               <view class="cover">
-                <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode=""></image>
+                <image class="cover-img" src="/assets/image/equities/kugou-logo.webp" mode=""></image>
                 <!-- <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="14943">
                   <path
                     d="M713.04314 394.841279l-33.486639 0 0-67.070491c0-93.874947-73.742441-167.623528-167.620458-167.623528-93.777733 0-167.572362 73.748581-167.572362 167.623528l0 67.070491-33.533711 0c-36.82466 0-67.019326 30.147594-67.019326 66.965091l0 335.251148c0 36.817497 30.194666 66.965091 67.019326 66.965091l402.212146 0c36.922897 0 67.069468-30.147594 67.069468-66.965091L780.111584 461.806369C780.113631 424.989896 749.966037 394.841279 713.04314 394.841279M511.937067 696.500388c-36.820567 0-67.019326-30.194666-67.019326-67.067421 0-36.875825 30.198759-67.070491 67.019326-67.070491 36.920851 0 67.070491 30.194666 67.070491 67.070491C579.007558 666.306746 548.857917 696.500388 511.937067 696.500388M615.877243 394.841279l-207.830211 0 0-67.070491c0-57.006285 46.933892-103.892081 103.889011-103.892081 57.053357 0 103.9412 46.885797 103.9412 103.892081L615.877243 394.841279z"
@@ -163,65 +163,65 @@
       <view class="recommend-promotion">
         <swiper class="promotion-ad" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
           <swiper-item v-for="item in 5" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
-            <image class="ad-item" src="/assets/image/home/government-enterprise-ad.png" mode="widthFix"></image>
+            <image class="ad-item" src="/assets/image/home/government-enterprise-ad.webp" mode="widthFix"></image>
           </swiper-item>
         </swiper>
         
         <view class="more-promotion">
           <view class="promotion-item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/equities/recommend-icon-01.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/equities/recommend-icon-01.webp" mode="widthFix"></image>
             </view>
             <view class="title">黄金会员</view>
           </view>
           <view class="promotion-item" @click="skipPage('/pages/activity/daysTicket')">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/equities/recommend-icon-02.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/equities/recommend-icon-02.webp" mode="widthFix"></image>
             </view>
             <view class="title">随心系</view>
           </view>
           <view class="promotion-item" @click="skipPage('/pages/activity/supercardGuard')">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/equities/recommend-icon-03.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/equities/recommend-icon-03.webp" mode="widthFix"></image>
             </view>
             <view class="title">随心购</view>
           </view>
           <view class="promotion-item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/equities/recommend-icon-04.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/equities/recommend-icon-04.webp" mode="widthFix"></image>
             </view>
             <view class="title">公告</view>
           </view>
         </view>
       </view>
       
-      <image class="promotion-group-ad" @click="skipPage('/pages/activity/flow20gb-1yuan')" src="/assets/image/equities/promotion-ad.png" mode="widthFix"></image>
+      <image class="promotion-group-ad" @click="skipPage('/pages/activity/flow20gb-1yuan')" src="/assets/image/equities/promotion-ad.webp" mode="widthFix"></image>
       
       <swiper class="slideshow-ad" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
         <swiper-item v-for="item in 5" :key="item" @click="skipPage('/pages/activity/getSecondaryCalliper')">
-          <image class="ad-item" src="/assets/image/equities/slideshow-ad.png" mode="widthFix"></image>
+          <image class="ad-item" src="/assets/image/equities/slideshow-ad.webp" mode="widthFix"></image>
         </swiper-item>
       </swiper>
       
       <view class="signi-column-box">
         <view class="signi-column-item">
-          <image class="cover" src="/assets/image/equities/column-icon-01.png" mode="widthFix"></image>
+          <image class="cover" src="/assets/image/equities/column-icon-01.webp" mode="widthFix"></image>
           <view class="title">流量秒杀</view>
         </view>
         <view class="signi-column-item">
-          <image class="cover" src="/assets/image/equities/column-icon-02.png" mode="widthFix"></image>
+          <image class="cover" src="/assets/image/equities/column-icon-02.webp" mode="widthFix"></image>
           <view class="title">爱优特会员</view>
         </view>
         <view class="signi-column-item">
-          <image class="cover" src="/assets/image/equities/column-icon-03.png" mode="widthFix"></image>
+          <image class="cover" src="/assets/image/equities/column-icon-03.webp" mode="widthFix"></image>
           <view class="title">权益福袋</view>
         </view>
         <view class="signi-column-item">
-          <image class="cover" src="/assets/image/equities/column-icon-04.png" mode="widthFix"></image>
+          <image class="cover" src="/assets/image/equities/column-icon-04.webp" mode="widthFix"></image>
           <view class="title">领话费</view>
         </view>
         <view class="signi-column-item">
-          <image class="cover" src="/assets/image/equities/column-icon-05.png" mode="widthFix"></image>
+          <image class="cover" src="/assets/image/equities/column-icon-05.webp" mode="widthFix"></image>
           <view class="title">生活费</view>
         </view>
       </view>
@@ -238,7 +238,7 @@
       <view class="member-privilege">
         <view class="privilege-item" v-for="item in 10" :key="item" @click="skipPage('/pages/activity/supercardGuard')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/equities/kugou-logo.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/equities/kugou-logo.webp" mode="widthFix"></image>
             <view class="tag">爆款</view>
           </view>
           <view class="title">车主权益包</view>
@@ -398,7 +398,7 @@
       box-sizing: border-box;
       padding: 5vw 4vw 6vw 4vw;
       position: relative;
-      background-image: url('/assets/image/equities/member-bg.png');
+      background-image: url('/assets/image/equities/member-bg.webp');
       background-repeat: no-repeat;
       background-size: 100% auto;
       z-index: 1;

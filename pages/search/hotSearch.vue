@@ -154,24 +154,24 @@
 
       <view class="recommend-list" v-if="!isShowOptimization">
         <view class="recommend-item">
-          <image class="icon" src="/assets/image/search/recommend-icon-01.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/search/recommend-icon-01.webp" mode="widthFix"></image>
           <view class="title">1分钱会员</view>
         </view>
         <view class="recommend-item">
-          <image class="icon" src="/assets/image/search/recommend-icon-02.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/search/recommend-icon-02.webp" mode="widthFix"></image>
           <view class="title">流量优惠</view>
         </view>
         <view class="recommend-item">
-          <image class="icon" src="/assets/image/search/recommend-icon-03.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/search/recommend-icon-03.webp" mode="widthFix"></image>
           <view class="title">套餐办理</view>
         </view>
         <view class="recommend-item">
-          <image class="icon" src="/assets/image/search/recommend-icon-02.png" mode="widthFix"></image>
+          <image class="icon" src="/assets/image/search/recommend-icon-02.webp" mode="widthFix"></image>
           <view class="title">权益副卡</view>
         </view>
       </view>
 
-      <image class="search-preference-ad" src="/assets/image/search/search-ad.png" mode="widthFix"></image>
+      <image class="search-preference-ad" src="/assets/image/search/search-ad.webp" mode="widthFix"></image>
     </view>
 
   </view>
@@ -380,7 +380,7 @@
         box-sizing: border-box;
         border: 1px solid #cae1fc;
         padding: 10vw 5vw 4vw 5vw;
-        background-image: url('/assets/image/search/hot-search-bg.png');
+        background-image: url('/assets/image/search/hot-search-bg.webp');
         background-repeat: no-repeat;
         background-size: 100% auto;
         background-position: 0 0;

@@ -5,55 +5,55 @@
     <swiper class="cover-ad" :autoplay="true" :indicator-dots="true" :interval="3000" :circular="true"
       indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)">
       <swiper-item>
-        <image class="cover-item" src="/assets/image/home/mobile-phone-ad.png" mode="widthFix"></image>
+        <image class="cover-item" src="/assets/image/home/mobile-phone-ad.webp" mode="widthFix"></image>
       </swiper-item>
       <swiper-item>
-        <image class="cover-item" src="/assets/image/home/mobile-phone-ad.png" mode="widthFix"></image>
+        <image class="cover-item" src="/assets/image/home/mobile-phone-ad.webp" mode="widthFix"></image>
       </swiper-item>
       <swiper-item>
-        <image class="cover-item" src="/assets/image/home/mobile-phone-ad.png" mode="widthFix"></image>
+        <image class="cover-item" src="/assets/image/home/mobile-phone-ad.webp" mode="widthFix"></image>
       </swiper-item>
     </swiper>
 
     <view class="menu-list">
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-pingguo.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-pingguo.webp" mode="widthFix"></image>
         <view class="name">iPhone</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-hongmeng.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-hongmeng.webp" mode="widthFix"></image>
         <view class="name">荣耀</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-xiaomi.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-xiaomi.webp" mode="widthFix"></image>
         <view class="name">小米</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-oppo.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-oppo.webp" mode="widthFix"></image>
         <view class="name">oppo</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-vivo.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-vivo.webp" mode="widthFix"></image>
         <view class="name">vivo</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-mobile-phone.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-mobile-phone.webp" mode="widthFix"></image>
         <view class="name">购机直降</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-mianfei.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-mianfei.webp" mode="widthFix"></image>
         <view class="name">分期免息</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-huawei.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-huawei.webp" mode="widthFix"></image>
         <view class="name">华为</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-shouji.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-shouji.webp" mode="widthFix"></image>
         <view class="name">千元专区</view>
       </view>
       <view class="menu-item">
-        <image class="icon" src="/assets/image/home/brand-ai.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/home/brand-ai.webp" mode="widthFix"></image>
         <view class="name">智能硬件</view>
       </view>
     </view>
@@ -68,7 +68,7 @@
         <view class="container">
           <view class="item">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
               <view class="tag">上新</view>
               <view class="info">至高24期免息</view>
             </view>
@@ -76,7 +76,7 @@
           </view>
           <view class="item">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
               <view class="tag">上新</view>
               <view class="info">至高24期免息</view>
             </view>
@@ -84,7 +84,7 @@
           </view>
           <view class="item">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
               <view class="tag">上新</view>
               <view class="info">至高24期免息</view>
             </view>
@@ -92,7 +92,7 @@
           </view>
           <view class="item">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
               <view class="tag">上新</view>
               <view class="info">至高24期免息</view>
             </view>
@@ -100,7 +100,7 @@
           </view>
           <view class="item">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
               <view class="tag">上新</view>
               <view class="info">至高24期免息</view>
             </view>
@@ -108,7 +108,7 @@
           </view>
           <view class="item">
             <view class="cover">
-              <image class="cover-img" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+              <image class="cover-img" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
               <view class="tag">上新</view>
               <view class="info">至高24期免息</view>
             </view>
@@ -119,7 +119,7 @@
     </view>
 
     <view class="hot-activity">
-      <image class="left-box" src="/assets/image/home/hot-activity-01.png" mode="widthFix"></image>
+      <image class="left-box" src="/assets/image/home/hot-activity-01.webp" mode="widthFix"></image>
       <view class="right-box">
         <view class="title">
           0元送60GB+会员全家桶
@@ -127,14 +127,14 @@
         <view class="content">
           <view class="content-item">
             <view class="item-container">
-              <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+              <image class="cover" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
               <view class="content">免息购机</view>
               <view class="title">专享特惠</view>
             </view>
           </view>
           <view class="content-item">
             <view class="item-container">
-              <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+              <image class="cover" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
               <view class="content">免息购机</view>
               <view class="title">专享特惠</view>
             </view>
@@ -144,10 +144,10 @@
     </view>
 
     <view class="hot-commodity">
-      <image class="left-commodity" src="/assets/image/home/hot-commodity-01.png" mode="widthFix"></image>
+      <image class="left-commodity" src="/assets/image/home/hot-commodity-01.webp" mode="widthFix"></image>
       <view class="right-commodity">
-        <image class="right-item" src="/assets/image/home/hot-commodity-02.png" mode="widthFix"></image>
-        <image class="right-item" src="/assets/image/home/hot-commodity-03.png" mode="widthFix"></image>
+        <image class="right-item" src="/assets/image/home/hot-commodity-02.webp" mode="widthFix"></image>
+        <image class="right-item" src="/assets/image/home/hot-commodity-03.webp" mode="widthFix"></image>
       </view>
     </view>
 
@@ -175,7 +175,7 @@
     <!-- 商品列表 -->
     <view class="commodity-list">
       <view class="commodity-item" v-for="index in 10" :key="index">
-        <image class="cover" src="/assets/image/home/phone-brand-cover.png" mode="widthFix"></image>
+        <image class="cover" src="/assets/image/home/phone-brand-cover.webp" mode="widthFix"></image>
         <view class="name">
           小米15
         </view>
@@ -579,7 +579,7 @@
           margin-bottom: 2vw;
         }
         .buy-but {
-          background-image: url('/assets/image/home/buy-but.png');
+          background-image: url('/assets/image/home/buy-but.webp');
           background-size: 100% 100%;
           width: 41.9vw;
           height: 10vw;

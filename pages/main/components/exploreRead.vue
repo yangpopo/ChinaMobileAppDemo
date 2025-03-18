@@ -3,7 +3,7 @@
     <swiper class="ad-swiper" :autoplay="true" :indicator-dots="true" indicator-color="rgba(255, 255, 255, 0.5)"
       indicator-active-color="rgba(255, 255, 255, 1)" :circular="true">
       <swiper-item v-for="item in 5" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
-        <image class="swiper-item-img" src="/assets/image/explore/read-ad.png" mode="widthFix"></image>
+        <image class="swiper-item-img" src="/assets/image/explore/read-ad.webp" mode="widthFix"></image>
       </swiper-item>
     </swiper>
 
@@ -14,7 +14,7 @@
       <view class="book-list">
         <view class="book-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/daysTicket')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/explore/book-cover.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/explore/book-cover.webp" mode="widthFix"></image>
           </view>
           <view class="name">长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思</view>
           <view class="score">10.0分</view>
@@ -28,7 +28,7 @@
       <view class="book-list">
         <view class="book-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/supercardGuard')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/explore/book-cover.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/explore/book-cover.webp" mode="widthFix"></image>
           </view>
           <view class="name">长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思</view>
           <view class="score">10.0分</view>
@@ -42,7 +42,7 @@
       <view class="book-list">
         <view class="book-item" v-for="item in 3" :key="item" @click="skipPage('/pages/activity/flow20gb-1yuan')">
           <view class="cover">
-            <image class="cover-img" src="/assets/image/explore/book-cover.png" mode="widthFix"></image>
+            <image class="cover-img" src="/assets/image/explore/book-cover.webp" mode="widthFix"></image>
           </view>
           <view class="name">长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思长相思</view>
           <view class="score">10.0分</view>

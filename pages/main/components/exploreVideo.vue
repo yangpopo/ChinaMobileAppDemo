@@ -2,7 +2,7 @@
   <view class="main">
     <video class="video-dom" src="/assets/video/oceans.mp4" controls></video>
     <view class="video-member">
-      <image class="head-portrait" src="/assets/image/home/head-portrait.png" mode="widthFix"></image>
+      <image class="head-portrait" src="/assets/image/home/head-portrait.webp" mode="widthFix"></image>
       <view class="member-info">
         <view class="title">您还不是会员</view>
         <view class="describe">开通会员享特权</view>
@@ -21,23 +21,23 @@
 
     <view class="referrals-area">
       <view class="area-item">
-        <image class="icon" src="/assets/image/explore/referrals-area-icon-01.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/referrals-area-icon-01.webp" mode="widthFix"></image>
         <view class="title">银发专区</view>
       </view>
       <view class="area-item">
-        <image class="icon" src="/assets/image/explore/referrals-area-icon-02.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/referrals-area-icon-02.webp" mode="widthFix"></image>
         <view class="title">CBA专区</view>
       </view>
       <view class="area-item">
-        <image class="icon" src="/assets/image/explore/referrals-area-icon-03.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/referrals-area-icon-03.webp" mode="widthFix"></image>
         <view class="title">布宫2</view>
       </view>
       <view class="area-item">
-        <image class="icon" src="/assets/image/explore/referrals-area-icon-04.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/referrals-area-icon-04.webp" mode="widthFix"></image>
         <view class="title">中超专区</view>
       </view>
       <view class="area-item">
-        <image class="icon" src="/assets/image/explore/referrals-area-icon-05.png" mode="widthFix"></image>
+        <image class="icon" src="/assets/image/explore/referrals-area-icon-05.webp" mode="widthFix"></image>
         <view class="title">农村专区</view>
       </view>
     </view>
@@ -48,7 +48,7 @@
     <view class="column-list">
       <view class="column-item" v-for="item in 2" :key="item">
         <view class="cover">
-          <image class="cover-img" src="/assets/image/home/service-hall-cover.png" mode="widthFix"></image>
+          <image class="cover-img" src="/assets/image/home/service-hall-cover.webp" mode="widthFix"></image>
         </view>
         <view class="title">@萨迦寺经书墙</view>
         <view class="subhead">世界上最大的书墙</view>
@@ -62,7 +62,7 @@
     <view class="column-list">
       <view class="column-item" v-for="item in 12" :key="item">
         <view class="cover">
-          <image class="cover-img" src="/assets/image/home/service-hall-cover.png" mode="widthFix"></image>
+          <image class="cover-img" src="/assets/image/home/service-hall-cover.webp" mode="widthFix"></image>
         </view>
         <view class="title">萨迦寺经书墙</view>
         <view class="subhead">世界上最大的书墙</view>
@@ -108,7 +108,7 @@
     .video-member {
       width: 100%;
       height: 21vw;
-      background-image: url("/assets/image/explore/video-member-tag.png");
+      background-image: url("/assets/image/explore/video-member-tag.webp");
       background-size: 100% 100%;
       box-sizing: border-box;
       position: relative;

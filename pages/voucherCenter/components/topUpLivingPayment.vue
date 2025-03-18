@@ -1,6 +1,6 @@
 <template>
   <view class="main">
-    <image class="living-payment-ad" src="/assets/image/livingPayment/living-payment-ad.png" mode="widthFix"></image>
+    <image class="living-payment-ad" src="/assets/image/livingPayment/living-payment-ad.webp" mode="widthFix"></image>
     
     <view class="column-box">
       <view class="column-title">
